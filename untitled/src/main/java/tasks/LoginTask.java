@@ -6,7 +6,9 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
+import net.serenitybdd.screenplay.actions.Scroll;
 import userinterfaces.LoginPage;
+import userinterfaces.RegisterPage;
 
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
@@ -24,6 +26,7 @@ public class LoginTask implements Task {
         actor.attemptsTo(
                 Enter.theValue(credentials.getDocument()).into(LoginPage.TXT_USER_NAME),
                 Enter.theValue(credentials.getPassword()).into(LoginPage.TXT_PASSWORD),
+                Scroll.to(RegisterPage.TXT_ADDRESS),
                 Click.on(LoginPage.BTN_LOGIN_SUBMIT));
     }
 }

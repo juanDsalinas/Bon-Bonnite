@@ -48,8 +48,8 @@ public class RegisterStepDefinitions {
 
     @When("the user enter ethe credentials")
     public void theUserEnterEtheCredentials(List <RegisterModel> credentialsList) {
-        RegisterModel
-        OnStage.theActorInTheSpotlight().attemptsTo(ClickOnAccountIconTask.clickOnAccountIcon());
+//        RegisterModel
+//        OnStage.theActorInTheSpotlight().attemptsTo(ClickOnAccountIconTask.clickOnAccountIcon());
 
     }
 
