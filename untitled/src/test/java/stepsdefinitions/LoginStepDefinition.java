@@ -11,6 +11,7 @@ import net.serenitybdd.screenplay.actors.Cast;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.WebDriver;
+import tasks.ClickOnAccountIconTask;
 
 public class LoginStepDefinition {
 
@@ -28,6 +29,7 @@ public class LoginStepDefinition {
     @Given("that the user is on the login page")
     public void thatTheUserIsOnTheLoginPage() {
         OnStage.theActorInTheSpotlight().wasAbleTo(Open.url("https://www.bon-bonite.com/"));
+        OnStage.theActorInTheSpotlight().wasAbleTo(ClickOnAccountIconTask.clickOnAccountIcon());
     }
     @When("the user enter the following credentials")
     public void theUserEnterTheFollowingCredentials(io.cucumber.datatable.DataTable dataTable) {
