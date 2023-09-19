@@ -1,3 +1,8 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
+<<<<<<< HEAD
 "Login","Successful login","ERROR","2023-09-19T14:24:03.3142199-05:00[America/Bogota]","0.0","22.72"
 "Register","Register Successful","SUCCESS","2023-09-19T14:52:02.312136-05:00[America/Bogota]","0.0","50.08"
+=======
+"Login","Successful login","SUCCESS","2023-09-19T14:40:22.0737259-05:00[America/Bogota]","0.0","91.82"
+"Register","Register Successful","SUCCESS","2023-09-19T12:43:22.5380464-05:00[America/Bogota]","0.0","40.29"
+>>>>>>> ba417a5727d2c03956cd80e243487e0a195ee7ed
