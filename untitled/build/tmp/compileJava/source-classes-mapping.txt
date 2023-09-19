@@ -1,18 +1,24 @@
 userinterfaces/LoginPage.java
  userinterfaces.LoginPage
-tasks/RegisterTask.java
- tasks.RegisterTask
+models/RegisterModel.java
+ models.RegisterModel
 userinterfaces/AccountComponent.java
  userinterfaces.AccountComponent
 userinterfaces/MenuComponent.java
  userinterfaces.MenuComponent
-userinterfaces/RegisterPage.java
- userinterfaces.RegisterPage
+questions/LoginQuestion.java
+ questions.LoginQuestion
 models/LoginModel.java
  models.LoginModel
 tasks/ClickOnAccountIconTask.java
  tasks.ClickOnAccountIconTask
-models/RegisterModel.java
- models.RegisterModel
+questions/RegisterQuestion.java
+ questions.RegisterQuestion
+tasks/RegisterTask.java
+ tasks.RegisterTask
+userinterfaces/RegisterPage.java
+ userinterfaces.RegisterPage
+questions/RegisterInvalidQuestion.java
+ questions.RegisterInvalidQuestion
 tasks/LoginTask.java
  tasks.LoginTask
