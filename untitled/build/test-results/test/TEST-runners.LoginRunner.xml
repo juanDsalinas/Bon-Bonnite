@@ -4,7 +4,7 @@
   <system-out><![CDATA[
 1 Scenarios (?[32m1 passed?[0m)
 3 Steps (?[32m3 passed?[0m)
-1m32,440s
+0m53,249s
 
 
 ]]></system-out>
@@ -27,7 +27,7 @@
 -------------------------------------------------------------------------------------
 
 [Test worker] INFO  - Test Suite Started: Login
-[pool-1-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@3c8758d1: Generating report for test outcome: Login:Successful login
-[pool-2-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@75663443: Generating report for test outcome: Login:Successful login
+[pool-1-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@11120583: Generating report for test outcome: Login:Successful login
+[pool-2-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@1554eaa4: Generating report for test outcome: Login:Successful login
 ]]></system-err>
 </testsuite>

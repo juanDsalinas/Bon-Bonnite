@@ -55,8 +55,8 @@ public class LoginStepDefinition {
     }
     @Then("the user should see the main page")
     public void theUserShouldSeeTheMainPage() {
-//        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(LoginQuestion.validateSuccessLogin()
-//        , Matchers.is(""));
+        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(LoginQuestion.validateSuccessLogin()
+        , Matchers.is("LISTA DE DESEOS")));
     }
 
 }
