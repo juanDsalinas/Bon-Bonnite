@@ -2,9 +2,11 @@ package stepsdefinitions;
 
 
 import io.cucumber.java.Before;
+import io.cucumber.java.DataTableType;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import models.LoginModel;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actions.Open;
 import net.serenitybdd.screenplay.actors.Cast;
@@ -12,6 +14,10 @@ import net.serenitybdd.screenplay.actors.OnStage;
 import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.WebDriver;
 import tasks.ClickOnAccountIconTask;
+import tasks.LoginTask;
+
+import java.util.List;
+import java.util.Map;
 
 public class LoginStepDefinition {
 
@@ -25,6 +31,14 @@ public class LoginStepDefinition {
         OnStage.theActorInTheSpotlight().can(BrowseTheWeb.with(hisBrowser));
     }
 
+    @DataTableType
+    public LoginModel preparedData(Map<String,String> values){
+        return new LoginModel(
+                values.get("document"),
+                values.get("password")
+        );
+    }
+
 
     @Given("that the user is on the login page")
     public void thatTheUserIsOnTheLoginPage() {
@@ -32,15 +46,10 @@ public class LoginStepDefinition {
         OnStage.theActorInTheSpotlight().wasAbleTo(ClickOnAccountIconTask.clickOnAccountIcon());
     }
     @When("the user enter the following credentials")
-    public void theUserEnterTheFollowingCredentials(io.cucumber.datatable.DataTable dataTable) {
-        // Write code here that turns the phrase above into concrete actions
-        // For automatic transformation, change DataTable to one of
-        // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
-        // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
-        // Double, Byte, Short, Long, BigInteger or BigDecimal.
-        //
-        // For other transformations you can register a DataTableType.
-
+    public void theUserEnterTheFollowingCredentials(List<LoginModel> credentialsList) {
+        LoginModel credentials;
+        credentials = credentialsList.get(0);
+        OnStage.theActorInTheSpotlight().attemptsTo(LoginTask.validateCredentials(credentials));
     }
     @Then("the user should see the main page")
     public void theUserShouldSeeTheMainPage() {
