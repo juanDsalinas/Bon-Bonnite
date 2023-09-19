@@ -6,6 +6,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
+import net.serenitybdd.screenplay.actions.Open;
 import net.serenitybdd.screenplay.actors.Cast;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.thucydides.core.annotations.Managed;
@@ -26,8 +27,7 @@ public class LoginStepDefinition {
 
     @Given("that the user is on the login page")
     public void thatTheUserIsOnTheLoginPage() {
-        // Write code here that turns the phrase above into concrete actions
-
+        OnStage.theActorInTheSpotlight().wasAbleTo(Open.url("https://www.bon-bonite.com/"));
     }
     @When("the user enter the following credentials")
     public void theUserEnterTheFollowingCredentials(io.cucumber.datatable.DataTable dataTable) {
