@@ -1,6 +1,7 @@
 package stepsdefinitions;
 
 
+import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.DataTableType;
 import io.cucumber.java.en.Given;
@@ -26,9 +27,11 @@ import java.util.Map;
 
 public class LoginStepDefinition {
 
+    //configuration of driver
     @Managed
     WebDriver hisBrowser;
 
+    //prepared the automation test (stage,actor,abilities)
     @Before
     public void setUp(){
         OnStage.setTheStage(Cast.ofStandardActors());
@@ -36,6 +39,7 @@ public class LoginStepDefinition {
         OnStage.theActorInTheSpotlight().can(BrowseTheWeb.with(hisBrowser));
     }
 
+    //configuration of the automation's data
     @DataTableType
     public LoginModel preparedData(Map<String,String> values){
         return new LoginModel(
@@ -74,5 +78,11 @@ public class LoginStepDefinition {
     public void userShouldSeeAnErrorAlertBecauseOfEmptyFields() {
         OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(EmptyLoginQuestion.validatedEmptyLogin()
         ,Matchers.is(true)));
+    }
+
+    //close of all the processes
+    @After
+    public void tearDown(){
+        hisBrowser.quit();
     }
 }

@@ -15,6 +15,7 @@ import static net.serenitybdd.screenplay.Tasks.instrumented;
 @AllArgsConstructor
 public class LoginTask implements Task {
 
+    //Login's logic
     private final LoginModel credentials;
 
     public static LoginTask validateCredentials(LoginModel credentials) {

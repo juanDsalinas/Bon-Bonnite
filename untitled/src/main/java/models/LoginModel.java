@@ -1,5 +1,6 @@
 package models;
 
+//data for implementation of the login feature
 public class LoginModel {
     private String document;
     private String password;
