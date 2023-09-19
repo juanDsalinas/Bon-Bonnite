@@ -1,12 +1,18 @@
-interactions/ClickOnTargetInteraction.java
- interactions.ClickOnTargetInteraction
 userinterfaces/LoginPage.java
  userinterfaces.LoginPage
+tasks/RegisterTask.java
+ tasks.RegisterTask
 userinterfaces/AccountComponent.java
  userinterfaces.AccountComponent
 userinterfaces/MenuComponent.java
  userinterfaces.MenuComponent
 userinterfaces/RegisterPage.java
  userinterfaces.RegisterPage
+models/LoginModel.java
+ models.LoginModel
 tasks/ClickOnAccountIconTask.java
  tasks.ClickOnAccountIconTask
+models/RegisterModel.java
+ models.RegisterModel
+tasks/LoginTask.java
+ tasks.LoginTask

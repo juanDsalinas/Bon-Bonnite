@@ -9,7 +9,10 @@ public class RegisterPage {
     public static final Target TXT_ADDRESS = Target.the("the label of address")
             .locatedBy("//input[@id='reg_email']");
 
-    public static final Target TXT_PASSWORD = Target.the("THE CHECKBOX")
+    public static final Target TXT_PASSWORD = Target.the("the label of address")
+            .locatedBy("//input[@id='reg_password']");
+
+    public static final Target CHECKBOX = Target.the("THE CHECKBOX")
             .locatedBy("//input[@id='privacy_policy_reg']");
 
     public static final Target BTN_REGISTER = Target.the("the btn to register")

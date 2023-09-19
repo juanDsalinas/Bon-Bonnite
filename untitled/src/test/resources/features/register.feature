@@ -8,5 +8,5 @@ Feature: Register
     Then the user should see the dashboard
 
     Examples:
-      | document  | email                     | password      |
-      | 123456789 | pepitoalcachofa@gmail.com | panecillo1234 |
+      | document   | email                       | password       |
+      | 9087261354 | winnerstosenasoft@gmail.com | paralelepipedo |

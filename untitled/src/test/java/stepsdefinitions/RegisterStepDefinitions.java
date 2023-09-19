@@ -15,6 +15,7 @@ import net.serenitybdd.screenplay.actors.OnStage;
 import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.WebDriver;
 import tasks.ClickOnAccountIconTask;
+import tasks.RegisterTask;
 
 import java.util.List;
 import java.util.Map;
@@ -47,9 +48,11 @@ public class RegisterStepDefinitions {
 
 
     @When("the user enter ethe credentials")
-    public void theUserEnterEtheCredentials(List <RegisterModel> credentialsList) {
-        RegisterModel
+    public void theUserEnterEtheCredentials(List<RegisterModel> credentialsList) {
         OnStage.theActorInTheSpotlight().attemptsTo(ClickOnAccountIconTask.clickOnAccountIcon());
+        RegisterModel credentials;
+        credentials = credentialsList.get(0);
+        OnStage.theActorInTheSpotlight().attemptsTo(RegisterTask.enter(credentials));
 
     }
 
