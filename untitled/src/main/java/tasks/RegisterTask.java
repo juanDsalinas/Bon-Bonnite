@@ -17,7 +17,7 @@ public class RegisterTask implements Task {
 
     @Override
     public <T extends Actor> void performAs(T actor) {
-        actor.attemptsTo(Enter.theValue(registerModel.getDocument()).into(RegisterPage.LBL_USERNAME));
+        actor.attemptsTo(Enter.theValue(registerModel.getDocument()).into(RegisterPage.TXT_USERNAME));
     }
 
     public static RegisterTask enter (RegisterModel registerModel){

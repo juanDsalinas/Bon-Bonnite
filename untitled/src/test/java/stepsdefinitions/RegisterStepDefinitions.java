@@ -1,5 +1,6 @@
 package stepsdefinitions;
 
+import com.gargoylesoftware.htmlunit.javascript.host.security.Credential;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.DataTableType;
@@ -15,6 +16,7 @@ import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.WebDriver;
 import tasks.ClickOnAccountIconTask;
 
+import java.util.List;
 import java.util.Map;
 
 public class RegisterStepDefinitions {
@@ -38,9 +40,6 @@ public class RegisterStepDefinitions {
                 value.get("password"));
     }
 
-
-
-
     @Given("the user is in the login page")
     public void theUserIsInTheLoginPage() {
         OnStage.theActorInTheSpotlight().wasAbleTo(Open.url("https://www.bon-bonite.com/"));
@@ -48,7 +47,8 @@ public class RegisterStepDefinitions {
 
 
     @When("the user enter ethe credentials")
-    public void theUserEnterEtheCredentials() {
+    public void theUserEnterEtheCredentials(List <RegisterModel> credentialsList) {
+        RegisterModel
         OnStage.theActorInTheSpotlight().attemptsTo(ClickOnAccountIconTask.clickOnAccountIcon());
 
     }
