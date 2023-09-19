@@ -2,9 +2,11 @@ package stepsdefinitions;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
+import io.cucumber.java.DataTableType;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import models.RegisterModel;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actions.Open;
 import net.serenitybdd.screenplay.actors.Cast;
@@ -12,6 +14,8 @@ import net.serenitybdd.screenplay.actors.OnStage;
 import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.WebDriver;
 import tasks.ClickOnAccountIconTask;
+
+import java.util.Map;
 
 public class RegisterStepDefinitions {
 
@@ -23,6 +27,15 @@ public class RegisterStepDefinitions {
         OnStage.setTheStage(Cast.ofStandardActors());
         OnStage.theActorCalled("user");
         OnStage.theActorInTheSpotlight().can(BrowseTheWeb.with(hisBrowser));
+    }
+
+    // tabla para iterar sobre todos los datos del datatabla
+    @DataTableType
+    public RegisterModel userData(Map <String, String> value){
+        return new RegisterModel(
+                value.get("document"),
+                value.get("email"),
+                value.get("password"));
     }
 
 
