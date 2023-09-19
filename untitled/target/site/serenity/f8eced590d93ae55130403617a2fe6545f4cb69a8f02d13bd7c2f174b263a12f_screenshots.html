@@ -154,7 +154,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 19-09-2023 12:28</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 19-09-2023 14:24</span>
     <br style="clear:left"/>
 </div>
 
@@ -190,9 +190,9 @@ To interact with the products
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></a></span>
                             <span class="test-case-title">
-                                <span class="success-color">Successful login
+                                <span class="error-color">Successful login
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -213,24 +213,64 @@ To interact with the products
 
     <div id="beforetable"></div>
     <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">Element click intercepted exception: element click intercepted: Element (button type='submit' class='woocommerce-Button button' name='login' value='...')Acceder(/button) is not clickable at point (392, 566). Other element would receive the click: (div)...(/div)</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>org.openqa.selenium.ElementClickInterceptedException </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>tasks.LoginTask.performAs(LoginTask.java:24)<br />stepsdefinitions.LoginStepDefinition.theUserEnterTheFollowingCredentials(LoginStepDefinition.java:52)<br />io.cucumber.java.Invoker.doInvoke(Invoker.java:66)<br />io.cucumber.java.Invoker.invoke(Invoker.java:24)<br />io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)<br />io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)<br />io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)<br />io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)<br />io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)<br />io.cucumber.core.runner.TestStep.run(TestStep.java:64)<br />io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)<br />io.cucumber.core.runner.TestCase.run(TestCase.java:104)<br />io.cucumber.core.runner.Runner.runPickle(Runner.java:73)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:234)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:57)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+                <div class="panel-body">
+                    <a href="pagesource2031377621191036025.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="a5f16e090843d7532432a16523a7724f95aea4b9dffef8353ca7641e44dec53a.png" title=" Example 1: {document=1111111111, password=contrase&ntilde;a1234}" width="1366"/>
-                <img src="a5f16e090843d7532432a16523a7724f95aea4b9dffef8353ca7641e44dec53a.png" title=" Given that the user is on the login page" width="1366"/>
-                <img src="a5f16e090843d7532432a16523a7724f95aea4b9dffef8353ca7641e44dec53a.png" title=" User click on account icon task" width="1366"/>
-                <img src="e1b2ca765eb1bc5b52e5997cbdeb9123c6b6fec5679060bc5b5d7db122dfa374.png" title=" user clicks on icon to access to the login-register page or account page" width="1366"/>
-                <img src="ceb497f34ed4650bca9c7d94f4d380b93d375a1c275b2900fca4d1ffe682dc31.png" title=" user clicks on icon to access to the login-register page or account page (completed)" width="1366"/>
-                <img src="ceb497f34ed4650bca9c7d94f4d380b93d375a1c275b2900fca4d1ffe682dc31.png" title=" User click on account icon task (completed)" width="1366"/>
-                <img src="9410b6e92c07a43b31df559141e9405a53cee9c13002bf00ac3ec79f9d52b401.png" title=" Given that the user is on the login page (completed)" width="1366"/>
-                <img src="9410b6e92c07a43b31df559141e9405a53cee9c13002bf00ac3ec79f9d52b401.png" title=" When the user enter the following credentials
+                <img src="deaf0437729e9641390326d3fe6f4bb44f8e9c94eece79907341a08b0006b322.png" title=" Example 1: {document=1111111111, password=contrase&ntilde;a1234}" width="1366"/>
+                <img src="deaf0437729e9641390326d3fe6f4bb44f8e9c94eece79907341a08b0006b322.png" title=" Given that the user is on the login page" width="1366"/>
+                <img src="deaf0437729e9641390326d3fe6f4bb44f8e9c94eece79907341a08b0006b322.png" title=" User click on account icon task" width="1366"/>
+                <img src="036e2ba59bd9e3c6365c22ee357e72a258f7f0a39b5da3ec8943e13d82be8702.png" title=" user clicks on icon to access to the login-register page or account page" width="1366"/>
+                <img src="870c2968c0ee321958ddf6f46e588170caf7fc4609c4dcd6293609a6f3aa64c7.png" title=" user clicks on icon to access to the login-register page or account page (completed)" width="1366"/>
+                <img src="870c2968c0ee321958ddf6f46e588170caf7fc4609c4dcd6293609a6f3aa64c7.png" title=" User click on account icon task (completed)" width="1366"/>
+                <img src="870c2968c0ee321958ddf6f46e588170caf7fc4609c4dcd6293609a6f3aa64c7.png" title=" Given that the user is on the login page (completed)" width="1366"/>
+                <img src="f17f89299259bd2bbe4c264439035c5b8b9f994ca85aeba4f873c506a907d175.png" title=" When the user enter the following credentials
 | document | password |
 | 1111111111 | contrase&ntilde;a1234 |" width="1366"/>
-                <img src="9410b6e92c07a43b31df559141e9405a53cee9c13002bf00ac3ec79f9d52b401.png" title=" When the user enter the following credentials
-| document | password |
-| 1111111111 | contrase&ntilde;a1234 | (completed)" width="1366"/>
-                <img src="9410b6e92c07a43b31df559141e9405a53cee9c13002bf00ac3ec79f9d52b401.png" title=" Then the user should see the main page" width="1366"/>
-                <img src="9410b6e92c07a43b31df559141e9405a53cee9c13002bf00ac3ec79f9d52b401.png" title=" Then the user should see the main page (completed)" width="1366"/>
-                <img src="9410b6e92c07a43b31df559141e9405a53cee9c13002bf00ac3ec79f9d52b401.png" title=" Example 1: {document=1111111111, password=contrase&ntilde;a1234} (completed): <span class='success-color'>SUCCESS</span>" width="1366"/>
+                <img src="2e407b7089533f67303a7a9a2f400eb57e5eb30923f70b1103a7a8c318c7e436.png" title=" User login task" width="1366"/>
+                <img src="2e407b7089533f67303a7a9a2f400eb57e5eb30923f70b1103a7a8c318c7e436.png" title=" user enters '1111111111' into Field to enter the username login" width="1366"/>
+                <img src="a354a7c644327734d43ff71f970cf59fc6bb57f0c4d8a60a0c72142916ea26fa.png" title=" user enters '1111111111' into Field to enter the username login (completed)" width="1366"/>
+                <img src="a354a7c644327734d43ff71f970cf59fc6bb57f0c4d8a60a0c72142916ea26fa.png" title=" user enters 'contrase&ntilde;a1234' into Field to enter the password login" width="1366"/>
+                <img src="4faaea33dc3c92ad7bc00cf0a244d674f6088577d5c40bee4693fb24399b7284.png" title=" user enters 'contrase&ntilde;a1234' into Field to enter the password login (completed)" width="1366"/>
+                <img src="4faaea33dc3c92ad7bc00cf0a244d674f6088577d5c40bee4693fb24399b7284.png" title=" user clicks on Button to submit the login credentials" width="1366"/>
+                <img src="d837647f99648fa58bbb960eed150be1cd3f9623f9f2ffa1088962bd1384ed9f.png" title=" user clicks on Button to submit the login credentials (completed): <span class='error-color'>ERROR</span>" width="1366"/>
             </div>
         </div>
 
