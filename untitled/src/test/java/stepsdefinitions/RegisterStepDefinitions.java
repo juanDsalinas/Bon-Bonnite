@@ -11,6 +11,7 @@ import net.serenitybdd.screenplay.actors.Cast;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.WebDriver;
+import tasks.ClickOnAccountIconTask;
 
 public class RegisterStepDefinitions {
 
@@ -33,6 +34,7 @@ public class RegisterStepDefinitions {
 
     @When("the user enter ethe credentials")
     public void theUserEnterEtheCredentials() {
+        OnStage.theActorInTheSpotlight().attemptsTo(ClickOnAccountIconTask.clickOnAccountIcon());
 
     }
 

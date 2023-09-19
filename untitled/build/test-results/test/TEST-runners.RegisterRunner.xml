@@ -4,11 +4,7 @@
   <system-out><![CDATA[
 1 Scenarios (?[32m1 passed?[0m)
 3 Steps (?[32m3 passed?[0m)
-<<<<<<< HEAD:untitled/build/test-results/test/TEST-runners.RegisterRunner.xml
-0m29.385s
-=======
-0m33,864s
->>>>>>> c0c8e0ab06fe063e6e0e5058b126c60785b3722c:untitled/build/test-results/test/TEST-runners.LoginRunner.xml
+0m41.267s
 
 
 ]]></system-out>
@@ -30,14 +26,8 @@
  Serenity BDD Support and Training at http://serenity-bdd.info/#/trainingandsupport  
 -------------------------------------------------------------------------------------
 
-<<<<<<< HEAD:untitled/build/test-results/test/TEST-runners.RegisterRunner.xml
 [Test worker] INFO  - Test Suite Started: Register
-[pool-1-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@220752c7: Generating report for test outcome: Register:Register Successful
-[pool-2-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@36e2b4ca: Generating report for test outcome: Register:Register Successful
-=======
-[Test worker] INFO  - Test Suite Started: Login
-[pool-1-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@2e44cb34: Generating report for test outcome: Login:Successful login
-[pool-2-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@578d472a: Generating report for test outcome: Login:Successful login
->>>>>>> c0c8e0ab06fe063e6e0e5058b126c60785b3722c:untitled/build/test-results/test/TEST-runners.LoginRunner.xml
+[pool-1-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@614db22d: Generating report for test outcome: Register:Register Successful
+[pool-2-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@5dda3f39: Generating report for test outcome: Register:Register Successful
 ]]></system-err>
 </testsuite>

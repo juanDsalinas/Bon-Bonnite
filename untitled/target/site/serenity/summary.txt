@@ -1,10 +1,5 @@
-<<<<<<< HEAD
-Serenity report generated 19-09-2023 12:35
+Serenity report generated 19-09-2023 12:44
 2 test scenarios (2 tests in all, including 1 rows of test data)
-=======
-Serenity report generated 19-09-2023 12:29
-1 test scenarios (1 tests in all, including 1 rows of test data)
->>>>>>> c0c8e0ab06fe063e6e0e5058b126c60785b3722c
 
 Passed:             2
 Pending             0

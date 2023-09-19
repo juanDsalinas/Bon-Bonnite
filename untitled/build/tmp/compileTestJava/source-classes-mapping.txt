@@ -1,8 +1,8 @@
-stepsdefinitions/RegisterStepDefinitions.java
- stepsdefinitions.RegisterStepDefinitions
+runners/RegisterRunner.java
+ runners.RegisterRunner
 stepsdefinitions/LoginStepDefinition.java
  stepsdefinitions.LoginStepDefinition
 runners/LoginRunner.java
  runners.LoginRunner
-runners/RegisterRunner.java
- runners.RegisterRunner
+stepsdefinitions/RegisterStepDefinitions.java
+ stepsdefinitions.RegisterStepDefinitions

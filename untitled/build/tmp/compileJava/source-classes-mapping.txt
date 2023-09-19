@@ -1,3 +1,5 @@
+interactions/ClickOnTargetInteraction.java
+ interactions.ClickOnTargetInteraction
 userinterfaces/LoginPage.java
  userinterfaces.LoginPage
 userinterfaces/AccountComponent.java
@@ -6,3 +8,5 @@ userinterfaces/MenuComponent.java
  userinterfaces.MenuComponent
 userinterfaces/RegisterPage.java
  userinterfaces.RegisterPage
+tasks/ClickOnAccountIconTask.java
+ tasks.ClickOnAccountIconTask
