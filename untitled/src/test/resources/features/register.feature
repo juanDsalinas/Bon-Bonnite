@@ -9,7 +9,7 @@ Feature: Register
 
     Examples:
       | document   | email                                               | password       |
-      | 1029380404 | winnerstosenasoft2023definitivofinalfinal@gmail.com | panaderia_@29@ |
+      | 1029345994 | winnerstosenasoft2023definitivofinalfinal@gmail.com | @juan@_david_@ |
 
   Scenario Outline: Register Failed
     Given the user is in the login page

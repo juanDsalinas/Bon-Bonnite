@@ -87,34 +87,54 @@
 <span class="code">
 <pre>
 ?[31mFailed scenarios:?[0m
+file:///C:/Users/User/Documents/GitHub/Automatizacion-Selenium/ScreenPlay/Projects/RepoSenaSoft/Bon-Bonnite/untitled/src/test/resources/features/register.feature:12 # Register Successful
 file:///C:/Users/User/Documents/GitHub/Automatizacion-Selenium/ScreenPlay/Projects/RepoSenaSoft/Bon-Bonnite/untitled/src/test/resources/features/register.feature:22 # Register Failed
 file:///C:/Users/User/Documents/GitHub/Automatizacion-Selenium/ScreenPlay/Projects/RepoSenaSoft/Bon-Bonnite/untitled/src/test/resources/features/register.feature:34 # Register Empty
 
-3 Scenarios (?[31m2 failed?[0m, ?[32m1 passed?[0m)
-9 Steps (?[31m2 failed?[0m, ?[32m7 passed?[0m)
-2m38.643s
+3 Scenarios (?[31m3 failed?[0m)
+9 Steps (?[31m3 failed?[0m, ?[32m6 passed?[0m)
+2m57.372s
 
 
-java.lang.AssertionError: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//ul[@class='woocommerce-error']//li[contains(text(),'{0}')]&quot;}
+java.lang.AssertionError: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),'Lista de deseos')]&quot;}
   (Session info: chrome=117.0.5938.89)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-0AB3449', ip: '192.168.45.213', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.89, chrome: {chromedriverVersion: 117.0.5938.88 (be6afae47212..., userDataDir: C:\Users\User\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64421}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8b4b93eda97493551a05dec906a9c16b
-*** Element info: {Using=xpath, value=//ul[@class='woocommerce-error']//li[contains(text(),'{0}')]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.89, chrome: {chromedriverVersion: 117.0.5938.88 (be6afae47212..., userDataDir: C:\Users\User\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64641}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 689a4430ccc84137e651d58010096ebe
+*** Element info: {Using=xpath, value=//a[contains(text(),'Lista de deseos')]}
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:38)
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:32)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:322)
+	at stepsdefinitions.RegisterStepDefinitions.theUserShouldSeeTheDashboard(RegisterStepDefinitions.java:69)
+	at ?.the user should see the dashboard(file:///C:/Users/User/Documents/GitHub/Automatizacion-Selenium/ScreenPlay/Projects/RepoSenaSoft/Bon-Bonnite/untitled/src/test/resources/features/register.feature:8)
+
+java.lang.AssertionError: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//ul[@class='woocommerce-error']//li[contains(text(),' Ya hay una cuenta registrada con tu direcciÃ³n de correo electrÃ³nico.')]&quot;}
+  (Session info: chrome=117.0.5938.89)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-0AB3449', ip: '192.168.45.213', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.89, chrome: {chromedriverVersion: 117.0.5938.88 (be6afae47212..., userDataDir: C:\Users\User\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64717}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 184092b9af0a0ca8c87ce1e6b7cfccab
+*** Element info: {Using=xpath, value=//ul[@class='woocommerce-error']//li[contains(text(),' Ya hay una cuenta registrada con tu direcciÃ³n de correo electrÃ³nico.')]}
 	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:38)
 	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:32)
 	at net.serenitybdd.screenplay.Actor.should(Actor.java:322)
 	at stepsdefinitions.RegisterStepDefinitions.theUserShouldSeeAErrorMessage(RegisterStepDefinitions.java:87)
 	at ?.the user should see a error message(file:///C:/Users/User/Documents/GitHub/Automatizacion-Selenium/ScreenPlay/Projects/RepoSenaSoft/Bon-Bonnite/untitled/src/test/resources/features/register.feature:19)
 
-java.lang.AssertionError: Cannot locate an element using xpath=//ul[@class='woocommerce-error']//li[contains(text(),'{0}')]
+java.lang.AssertionError: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//ul[@class='woocommerce-error']//li[contains(text(),' Ya hay una cuenta registrada con tu direcciÃ³n de correo electrÃ³nico.')]&quot;}
+  (Session info: chrome=117.0.5938.89)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-0AB3449', ip: '192.168.45.213', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20.1'
-Driver info: driver.version: RemoteWebDriver
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.89, chrome: {chromedriverVersion: 117.0.5938.88 (be6afae47212..., userDataDir: C:\Users\User\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64795}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cde189555dff1376ef9f741b8ce39912
+*** Element info: {Using=xpath, value=//ul[@class='woocommerce-error']//li[contains(text(),' Ya hay una cuenta registrada con tu direcciÃ³n de correo electrÃ³nico.')]}
 	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:38)
 	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:32)
 	at net.serenitybdd.screenplay.Actor.should(Actor.java:322)
@@ -147,12 +167,12 @@ Driver info: driver.version: RemoteWebDriver
 -------------------------------------------------------------------------------------
 
 [Test worker] INFO  - Test Suite Started: Register
-[pool-1-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@463b037b: Generating report for test outcome: Register:Register Successful
-[pool-1-thread-3] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@463b037b: Generating report for test outcome: Register:Register Empty
-[pool-1-thread-2] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@463b037b: Generating report for test outcome: Register:Register Failed
-[pool-2-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@77fc485f: Generating report for test outcome: Register:Register Successful
-[pool-2-thread-2] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@77fc485f: Generating report for test outcome: Register:Register Failed
-[pool-2-thread-3] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@77fc485f: Generating report for test outcome: Register:Register Empty
+[pool-1-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@1eb56b71: Generating report for test outcome: Register:Register Successful
+[pool-1-thread-2] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@1eb56b71: Generating report for test outcome: Register:Register Failed
+[pool-1-thread-3] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@1eb56b71: Generating report for test outcome: Register:Register Empty
+[pool-2-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@72376e1b: Generating report for test outcome: Register:Register Successful
+[pool-2-thread-2] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@72376e1b: Generating report for test outcome: Register:Register Failed
+[pool-2-thread-3] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@72376e1b: Generating report for test outcome: Register:Register Empty
 </pre>
 </span>
 </div>
@@ -164,7 +184,7 @@ Driver info: driver.version: RemoteWebDriver
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 6.8.3</a> at 19 sep 2023 16:12:09</p>
+<a href="http://www.gradle.org">Gradle 6.8.3</a> at 19 sep 2023 16:29:16</p>
 </div>
 </div>
 </body>
