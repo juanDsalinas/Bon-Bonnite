@@ -23,6 +23,4 @@ public class RegisterPage {
 
 
 
-//*[@id="customer_login"]/div[1]/form/p[1]/label
-
 }
