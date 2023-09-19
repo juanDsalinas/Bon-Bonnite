@@ -1,10 +1,15 @@
+<<<<<<< HEAD
 Serenity report generated 19-09-2023 15:33
 4 test scenarios (4 tests in all, including 3 rows of test data)
+=======
+Serenity report generated 19-09-2023 16:12
+4 test scenarios (4 tests in all, including 4 rows of test data)
+>>>>>>> 737f3f821285b1ffe6a50743af9a5a80d87c8fd9
 
 Passed:             4
 Pending             0
 Failed:             0
-Failed with errors: 0
+Failed with errors: 2
 Compromised:        0
 Pending:            0
 Ignored:            0

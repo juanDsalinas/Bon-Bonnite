@@ -1,2 +1,6 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
+<<<<<<< HEAD
 "Login","Successful login","FAILURE","2023-09-19T14:58:26.005505-05:00[America/Bogota]","0.0","34.99"
+=======
+"Register","Register Failed","FAILURE","2023-09-19T15:38:44.1483564-05:00[America/Bogota]","0.0","40.85"
+>>>>>>> 737f3f821285b1ffe6a50743af9a5a80d87c8fd9
