@@ -15,7 +15,8 @@ import net.serenitybdd.screenplay.actors.OnStage;
 import net.thucydides.core.annotations.Managed;
 import org.hamcrest.Matchers;
 import org.openqa.selenium.WebDriver;
-import questions.LoginQuestion;
+import questions.InvalidLoginQuestion;
+import questions.SuccessfulLoginQuestion;
 import tasks.ClickOnAccountIconTask;
 import tasks.LoginTask;
 
@@ -42,6 +43,7 @@ public class LoginStepDefinition {
         );
     }
 
+    //successful login scenario
     @Given("that the user is on the login page")
     public void thatTheUserIsOnTheLoginPage() {
         OnStage.theActorInTheSpotlight().wasAbleTo(Open.url("https://www.bon-bonite.com/"));
@@ -55,8 +57,14 @@ public class LoginStepDefinition {
     }
     @Then("the user should see the main page")
     public void theUserShouldSeeTheMainPage() {
-        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(LoginQuestion.validateSuccessLogin()
+        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(SuccessfulLoginQuestion.validateSuccessLogin()
         , Matchers.is("LISTA DE DESEOS")));
     }
 
+    //Invalid login scenario
+    @Then("the user should see an alert with an error message")
+    public void theUserShouldSeeAnAlertWithAnErrorMessage() {
+        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(InvalidLoginQuestion.rejectLogin()
+        ,Matchers.is(true)));
+    }
 }
