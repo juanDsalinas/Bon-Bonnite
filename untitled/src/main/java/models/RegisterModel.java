@@ -5,6 +5,12 @@ public class RegisterModel {
     private String email;
     private String password;
 
+    public RegisterModel(String document, String email, String password) {
+        this.document = document;
+        this.email = email;
+        this.password = password;
+    }
+
     public String getDocument() {
         return document;
     }

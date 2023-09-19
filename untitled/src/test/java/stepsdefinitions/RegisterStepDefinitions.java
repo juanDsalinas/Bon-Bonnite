@@ -39,6 +39,8 @@ public class RegisterStepDefinitions {
     }
 
 
+
+
     @Given("the user is in the login page")
     public void theUserIsInTheLoginPage() {
         OnStage.theActorInTheSpotlight().wasAbleTo(Open.url("https://www.bon-bonite.com/"));
