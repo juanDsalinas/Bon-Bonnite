@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="Register" skipped="0" tests="1" time="18.51" timestamp="2023-09-19 12:12:09"><testcase name="Register Successful"><error message="Could not instantiate class org.openqa.selenium.chrome.ChromeDriver" type="net.thucydides.core.webdriver.DriverConfigurationError">Could not instantiate class org.openqa.selenium.chrome.ChromeDriver</error><system-err>Could not instantiate class org.openqa.selenium.chrome.ChromeDriver&#13;
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="Register" skipped="0" tests="1" time="10.49" timestamp="2023-09-19 12:25:18"><testcase name="Register Successful"><error message="Could not instantiate class org.openqa.selenium.chrome.ChromeDriver" type="net.thucydides.core.webdriver.DriverConfigurationError">Could not instantiate class org.openqa.selenium.chrome.ChromeDriver</error><system-err>Could not instantiate class org.openqa.selenium.chrome.ChromeDriver&#13;
 stepsdefinitions.RegisterStepDefinitions.theUserIsInTheLoginPage(RegisterStepDefinitions.java:30)&#13;
 io.cucumber.java.Invoker.doInvoke(Invoker.java:66)&#13;
 io.cucumber.java.Invoker.invoke(Invoker.java:24)&#13;
@@ -13,6 +13,6 @@ io.cucumber.core.runner.TestCase.run(TestCase.java:104)&#13;
 io.cucumber.core.runner.Runner.runPickle(Runner.java:73)&#13;
 io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)&#13;
 io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)&#13;
-io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:258)&#13;
+io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:234)&#13;
 io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:57)&#13;
 </system-err></testcase></testsuite>
