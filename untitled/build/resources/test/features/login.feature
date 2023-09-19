@@ -22,3 +22,12 @@ Feature: Login
       | document | password      |
       | 1234     | wrongpassword |
 
+  Scenario Outline: login with empty fields
+    Given that the user is on the login page
+    When the user enter the following credentials
+      | document   | password   |
+      | <document> | <password> |
+    Then user should see an error alert because of empty fields
+    Examples:
+      | document | password |
+      |          |          |

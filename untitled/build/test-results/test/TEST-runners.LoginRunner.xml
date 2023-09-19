@@ -2,9 +2,9 @@
 <testsuite name="runners.LoginRunner" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="LAPTOP-DASABUPE" time="0.0">
   <properties/>
   <system-out><![CDATA[
-2 Scenarios (?[32m2 passed?[0m)
-6 Steps (?[32m6 passed?[0m)
-1m3,630s
+3 Scenarios (?[32m3 passed?[0m)
+9 Steps (?[32m9 passed?[0m)
+1m27,353s
 
 
 ]]></system-out>
@@ -27,9 +27,11 @@
 -------------------------------------------------------------------------------------
 
 [Test worker] INFO  - Test Suite Started: Login
-[pool-1-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@1ef5cde4: Generating report for test outcome: Login:Successful login
-[pool-1-thread-2] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@1ef5cde4: Generating report for test outcome: Login:Invalid login
-[pool-2-thread-2] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@4eacb6d1: Generating report for test outcome: Login:Invalid login
-[pool-2-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@4eacb6d1: Generating report for test outcome: Login:Successful login
+[pool-1-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@f98cff: Generating report for test outcome: Login:Successful login
+[pool-1-thread-2] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@f98cff: Generating report for test outcome: Login:Invalid login
+[pool-1-thread-3] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@f98cff: Generating report for test outcome: Login:login with empty fields
+[pool-2-thread-3] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@10508ba6: Generating report for test outcome: Login:login with empty fields
+[pool-2-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@10508ba6: Generating report for test outcome: Login:Successful login
+[pool-2-thread-2] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@10508ba6: Generating report for test outcome: Login:Invalid login
 ]]></system-err>
 </testsuite>

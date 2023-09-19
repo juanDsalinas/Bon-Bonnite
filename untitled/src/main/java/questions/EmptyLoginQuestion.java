@@ -5,12 +5,12 @@ import net.serenitybdd.screenplay.Question;
 import net.serenitybdd.screenplay.questions.Enabled;
 import userinterfaces.LoginPage;
 
-public class InvalidLoginQuestion implements Question {
+public class EmptyLoginQuestion implements Question {
     @Override
     public Object answeredBy(Actor actor) {
-        return Enabled.of(LoginPage.ALT_ERROR_LOGIN).viewedBy(actor).asBoolean();
+        return Enabled.of(LoginPage.ALT_EMPTY_LOGIN).viewedBy(actor).asBoolean();
     }
-    public static InvalidLoginQuestion rejectLogin(){
-        return new InvalidLoginQuestion();
+    public static EmptyLoginQuestion validatedEmptyLogin(){
+        return new EmptyLoginQuestion();
     }
 }

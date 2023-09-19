@@ -1,1 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Login" skipped="0" tests="2" time="62.38" timestamp="2023-09-19 03:16:15"><testcase name="Successful login"/><testcase name="Invalid login"/></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Login" skipped="0" tests="3" time="86.54" timestamp="2023-09-19 03:32:01"><testcase name="Successful login"/><testcase name="Invalid login"/><testcase name="login with empty fields"/></testsuite>

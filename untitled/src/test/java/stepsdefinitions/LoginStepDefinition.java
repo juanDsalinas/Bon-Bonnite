@@ -15,6 +15,7 @@ import net.serenitybdd.screenplay.actors.OnStage;
 import net.thucydides.core.annotations.Managed;
 import org.hamcrest.Matchers;
 import org.openqa.selenium.WebDriver;
+import questions.EmptyLoginQuestion;
 import questions.InvalidLoginQuestion;
 import questions.SuccessfulLoginQuestion;
 import tasks.ClickOnAccountIconTask;
@@ -65,6 +66,13 @@ public class LoginStepDefinition {
     @Then("the user should see an alert with an error message")
     public void theUserShouldSeeAnAlertWithAnErrorMessage() {
         OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(InvalidLoginQuestion.rejectLogin()
+        ,Matchers.is(true)));
+    }
+
+    //login with empty fields scenario
+    @Then("user should see an error alert because of empty fields")
+    public void userShouldSeeAnErrorAlertBecauseOfEmptyFields() {
+        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(EmptyLoginQuestion.validatedEmptyLogin()
         ,Matchers.is(true)));
     }
 }
