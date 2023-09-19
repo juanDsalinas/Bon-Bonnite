@@ -1,0 +1,8 @@
+userinterfaces/LoginPage.java
+ userinterfaces.LoginPage
+userinterfaces/AccountComponent.java
+ userinterfaces.AccountComponent
+userinterfaces/MenuComponent.java
+ userinterfaces.MenuComponent
+userinterfaces/RegisterPage.java
+ userinterfaces.RegisterPage
