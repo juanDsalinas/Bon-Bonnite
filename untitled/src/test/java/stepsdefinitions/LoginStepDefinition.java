@@ -7,12 +7,15 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import models.LoginModel;
+import net.serenitybdd.screenplay.GivenWhenThen;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actions.Open;
 import net.serenitybdd.screenplay.actors.Cast;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.thucydides.core.annotations.Managed;
+import org.hamcrest.Matchers;
 import org.openqa.selenium.WebDriver;
+import questions.LoginQuestion;
 import tasks.ClickOnAccountIconTask;
 import tasks.LoginTask;
 
@@ -39,7 +42,6 @@ public class LoginStepDefinition {
         );
     }
 
-
     @Given("that the user is on the login page")
     public void thatTheUserIsOnTheLoginPage() {
         OnStage.theActorInTheSpotlight().wasAbleTo(Open.url("https://www.bon-bonite.com/"));
@@ -53,8 +55,8 @@ public class LoginStepDefinition {
     }
     @Then("the user should see the main page")
     public void theUserShouldSeeTheMainPage() {
-        // Write code here that turns the phrase above into concrete actions
-
+//        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(LoginQuestion.validateSuccessLogin()
+//        , Matchers.is(""));
     }
 
 }
