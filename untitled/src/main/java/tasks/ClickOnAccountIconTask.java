@@ -8,6 +8,7 @@ import userinterfaces.MenuComponent;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
 public class ClickOnAccountIconTask implements Task {
+
     //Click on a menu component
     // 7 - shoes
     @Override
