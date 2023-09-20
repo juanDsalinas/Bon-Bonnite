@@ -26,4 +26,9 @@ public class RegisterPage {
     public static final Target ALT_ERROR_MESSAGE = Target.the("registration error alert")
             .locatedBy("//ul[@class='woocommerce-error']//li[contains(text(),'{0}')]");
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 90baa97c08b849a493b47f6197c9c6a63f2a83fc
 }

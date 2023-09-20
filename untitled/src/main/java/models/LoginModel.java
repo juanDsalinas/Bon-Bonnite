@@ -1,5 +1,6 @@
 package models;
 
+//data for implementation of the login feature
 public class LoginModel {
     // mapeo de los datos del datatable
     private String document;

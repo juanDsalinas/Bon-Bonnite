@@ -11,3 +11,23 @@ Feature: Login
     Examples:
       | document   | password       |
       | 1111111111 | contraseña1234 |
+
+  Scenario Outline: Invalid login
+    Given that the user is on the login page
+    When the user enter the following credentials
+      | document   | password   |
+      | <document> | <password> |
+    Then the user should see an alert with an error message
+    Examples:
+      | document | password      |
+      | 1234     | wrongpassword |
+
+  Scenario Outline: login with empty fields
+    Given that the user is on the login page
+    When the user enter the following credentials
+      | document   | password   |
+      | <document> | <password> |
+    Then user should see an error alert because of empty fields
+    Examples:
+      | document | password |
+      |          |          |
