@@ -9,7 +9,8 @@ public class MenuComponent {
 
 
     //menu categories
-
+    public static final Target LBL_MENU_PRODUCT = Target.the("")
+            .locatedBy("//*[@id='menu-item-{0}']");
 
 
 }
