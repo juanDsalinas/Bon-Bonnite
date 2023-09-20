@@ -8,7 +8,7 @@ Feature: purchase flow processes
     Then the user should see the main page
 
   Scenario Outline: buy shoes
-    Given that the user is on the shoes section
+    Given that the user is on the "shoes" section
     When he select the product number
       | product   |
       | <product> |

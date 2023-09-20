@@ -11,6 +11,7 @@ import net.serenitybdd.screenplay.actors.Cast;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.WebDriver;
+import tasks.ClickOnMenuCategoriesTask;
 
 public class PurchaseStepDefinition {
 
@@ -25,9 +26,9 @@ public class PurchaseStepDefinition {
     }
 
 
-    @Given("that the user is on the shoes section")
-    public void thatTheUserIsOnTheShoesSection() {
-
+    @Given("that the user is on the {string} section")
+    public void thatTheUserIsOnTheShoesSection(String menuOption) {
+        OnStage.theActorInTheSpotlight().wasAbleTo(ClickOnMenuCategoriesTask.selectMenuOption(menuOption));
     }
 
 
