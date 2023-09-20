@@ -6,6 +6,8 @@ import net.serenitybdd.screenplay.questions.Text;
 import userinterfaces.AccountComponent;
 
 public class RegisterQuestion implements Question<String> {
+
+    // creacion de la question para que valide con un texto
     @Override
     public String answeredBy(Actor actor) {
         return Text.of(AccountComponent.LBL_WISH_LIST).viewedBy(actor).asString();

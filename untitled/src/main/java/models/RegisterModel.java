@@ -1,16 +1,20 @@
 package models;
 
 public class RegisterModel {
+
+    // mapeo de los datos del datatable
     private String document;
     private String email;
     private String password;
 
+    // constructor
     public RegisterModel(String document, String email, String password) {
         this.document = document;
         this.email = email;
         this.password = password;
     }
 
+    // getters and setters para acceder a los datos del datatable
     public String getDocument() {
         return document;
     }

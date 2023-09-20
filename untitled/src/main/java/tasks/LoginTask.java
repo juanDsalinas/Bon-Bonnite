@@ -15,13 +15,19 @@ import static net.serenitybdd.screenplay.Tasks.instrumented;
 @AllArgsConstructor
 public class LoginTask implements Task {
 
+<<<<<<< HEAD
+    // instancia del datatable
+=======
     //Login's logic
+>>>>>>> 90baa97c08b849a493b47f6197c9c6a63f2a83fc
     private final LoginModel credentials;
 
+    // metodo para devolver el objto LoginTask
     public static LoginTask validateCredentials(LoginModel credentials) {
         return instrumented(LoginTask.class, credentials);
     }
 
+    // creacion del objeto LoginTask
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(

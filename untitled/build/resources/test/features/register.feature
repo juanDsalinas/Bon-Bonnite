@@ -8,8 +8,8 @@ Feature: Register
     Then the user should see the dashboard
 
     Examples:
-      | document   | email                                               | password       |
-      | 1029380404 | winnerstosenasoft2023definitivofinalfinal@gmail.com | panaderia_@29@ |
+      | document   | email                     | password                   |
+      | 2525252525 | panetonconarroz@gmail.com | @WINNERS2023@SENASOFT2023@ |
 
   Scenario Outline: Register Failed
     Given the user is in the login page
@@ -22,12 +22,12 @@ Feature: Register
       | eeeee    | winnerstosenasoft2023@gmail.com | atunconmayonesa |
 
 
-  Scenario Outline: Register Empty
+  Scenario Outline: Register with empty fields
     Given the user is in the login page
     When the user enter the empty credentials
       | document   | email   | password   |
       | <document> | <email> | <password> |
-    Then the user should see a error message
+    Then the user should see a error message of empty credentials
 
     Examples:
       | document | email | password |

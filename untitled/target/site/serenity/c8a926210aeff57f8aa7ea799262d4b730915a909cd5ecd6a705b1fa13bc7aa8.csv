@@ -1,7 +1,11 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
 <<<<<<< HEAD
+"Register","Register Empty","ERROR","2023-09-19T16:28:26.275858-05:00[America/Bogota]","0.0","45.41"
+=======
+<<<<<<< HEAD
 "Login","Successful login","ERROR","2023-09-19T15:02:06.526844-05:00[America/Bogota]","0.0","28.12"
 =======
 "Register","Register Failed","ERROR","2023-09-19T16:10:11.7232279-05:00[America/Bogota]","0.0","56.02"
 "Register","Register Empty","ERROR","2023-09-19T16:11:10.0685991-05:00[America/Bogota]","0.0","49.82"
 >>>>>>> 737f3f821285b1ffe6a50743af9a5a80d87c8fd9
+>>>>>>> 90baa97c08b849a493b47f6197c9c6a63f2a83fc
