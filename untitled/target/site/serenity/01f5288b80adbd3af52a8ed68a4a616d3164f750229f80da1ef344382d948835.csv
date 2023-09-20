@@ -1,11 +1,15 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
 <<<<<<< HEAD
+<<<<<<< HEAD
 "Login","Successful login","SUCCESS","2023-09-19T15:32:01.6710539-05:00[America/Bogota]","0.0","35.43"
 "Login","Invalid login","SUCCESS","2023-09-19T15:32:37.145514-05:00[America/Bogota]","0.0","18.86"
 "Login","login with empty fields","SUCCESS","2023-09-19T15:32:56.0152335-05:00[America/Bogota]","0.0","32.25"
 =======
 "purchase flow processes","buy shoes","SUCCESS","2023-09-20T10:14:51.6642868-05:00[America/Bogota]","0.0","51.43"
 >>>>>>> add2fc9b75b4407ddaba9a05c490ee76bddd5eca
+=======
+"purchase flow processes","buy shoes","SUCCESS","2023-09-20T10:36:47.1160303-05:00[America/Bogota]","0.0","187.72"
+>>>>>>> ec575b3c43aa6a06450f70dbd2302b1421e1ec3c
 "Register","Register Successful","SUCCESS","2023-09-19T21:22:12.7113606-05:00[America/Bogota]","0.0","39.3"
 "Register","Register Failed","SUCCESS","2023-09-19T21:22:52.117574-05:00[America/Bogota]","0.0","26.31"
 "Register","Register with empty fields","SUCCESS","2023-09-19T21:23:18.4536726-05:00[America/Bogota]","0.0","22.52"

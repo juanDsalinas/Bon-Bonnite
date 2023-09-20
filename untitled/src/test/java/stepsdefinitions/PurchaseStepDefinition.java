@@ -14,6 +14,7 @@ import net.serenitybdd.screenplay.actors.Cast;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.WebDriver;
+import tasks.ClickOnMenuCategoriesTask;
 
 public class PurchaseStepDefinition {
 
@@ -27,43 +28,16 @@ public class PurchaseStepDefinition {
         OnStage.theActorInTheSpotlight().can(BrowseTheWeb.with(hisBrowser));
     }
 
-
     // implementation of feature
     @Given("the user is in the main page and clicks on some option of menu navigation")
     public void theUserIsInTheMainPageAndClicksOnSomeOptionOfMenuNavigation() {
-        OnStage.theActorInTheSpotlight().wasAbleTo(Click.on(""));
+        OnStage.theActorInTheSpotlight().wasAbleTo();
     }
 
-    @When("the user add a product into the cart")
-    public void theUserAddAProductIntoTheCart() {
-
-    }
-    @And("the user repeat this process other twice")
-    public void theUserRepeatThisProcessOtherTwice() {
-
-    }
-    @And("the user clicks on the cart and see cart")
-    public void theUserClicksOnTheCartAndSeeCart() {
-
-    }
-    @And("the user clicks on finalizar compra and clicks on continuar")
-    public void theUserClicksOnFinalizarCompraAndClicksOnContinuar() {
-
-    }
-    @And("the user filled out the form with their data and clicks on pagar")
-    public void theUserFilledOutTheFormWithTheirDataAndClicksOnPagar() {
-
-    }
-    @Then("the user should see the payment gateway")
-    public void theUserShouldSeeThePaymentGateway() {
-
-    }
-
-
-    // Scenario
-    @Given("that the user is on the shoes section")
-    public void thatTheUserIsOnTheShoesSection() {
-
+    // Scenario Bulla
+    @Given("that the user is on the {string} section")
+    public void thatTheUserIsOnTheShoesSection(String menuOption) {
+        OnStage.theActorInTheSpotlight().wasAbleTo(ClickOnMenuCategoriesTask.selectMenuOption(menuOption));
     }
 
 
@@ -95,8 +69,9 @@ public class PurchaseStepDefinition {
 
     }
 
-//    @After
-//    public void tearDown(){
-//        hisBrowser.quit();
-//    }
+    // configuration for after of the proccess
+   @After
+    public void tearDown(){
+        hisBrowser.quit();
+    }
 }

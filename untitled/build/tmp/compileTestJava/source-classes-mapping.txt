@@ -4,9 +4,9 @@ stepsdefinitions/LoginStepDefinition.java
  stepsdefinitions.LoginStepDefinition
 runners/LoginRunner.java
  runners.LoginRunner
-runners/PurchaseRunner.java
- runners.PurchaseRunner
-stepsdefinitions/RegisterStepDefinitions.java
- stepsdefinitions.RegisterStepDefinitions
 stepsdefinitions/PurchaseStepDefinition.java
  stepsdefinitions.PurchaseStepDefinition
+stepsdefinitions/RegisterStepDefinitions.java
+ stepsdefinitions.RegisterStepDefinitions
+runners/PurchaseRunner.java
+ runners.PurchaseRunner

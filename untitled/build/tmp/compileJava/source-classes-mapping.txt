@@ -1,3 +1,7 @@
+tasks/ClickOnMenuNavigation.java
+ tasks.ClickOnMenuNavigation
+tasks/ClickOnMenuCategoriesTask.java
+ tasks.ClickOnMenuCategoriesTask
 userinterfaces/AccountComponent.java
  userinterfaces.AccountComponent
 userinterfaces/MenuComponent.java
