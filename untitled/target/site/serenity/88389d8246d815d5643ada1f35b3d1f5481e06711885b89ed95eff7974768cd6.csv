@@ -1,2 +1,6 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
+<<<<<<< HEAD
 "purchase flow processes","purchase of many products","PENDING","2023-09-20T10:12:41.6138181-05:00[America/Bogota]","0.0","33.99"
+=======
+"purchase flow processes","buy shoes","PENDING","2023-09-20T10:10:46.3469208-05:00[America/Bogota]","0.0","38.97"
+>>>>>>> add2fc9b75b4407ddaba9a05c490ee76bddd5eca
