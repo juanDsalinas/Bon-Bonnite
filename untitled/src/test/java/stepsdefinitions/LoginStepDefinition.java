@@ -51,11 +51,12 @@ public class LoginStepDefinition {
     //successful login scenario
     @Given("that the user is on the login page")
     public void thatTheUserIsOnTheLoginPage() {
-        OnStage.theActorInTheSpotlight().wasAbleTo(Open.url("https://www.bon-bonite.com/"));
-        OnStage.theActorInTheSpotlight().wasAbleTo(ClickOnAccountIconTask.clickOnAccountIcon());
+        OnStage.theActorInTheSpotlight().wasAbleTo(Open.url("https://www.bon-bonite.com"));
     }
+
     @When("the user enter the following credentials")
     public void theUserEnterTheFollowingCredentials(List<LoginModel> credentialsList) {
+        OnStage.theActorInTheSpotlight().wasAbleTo(ClickOnAccountIconTask.clickOnAccountIcon());
         LoginModel credentials;
         credentials = credentialsList.get(0);
         OnStage.theActorInTheSpotlight().attemptsTo(LoginTask.validateCredentials(credentials));
@@ -81,8 +82,8 @@ public class LoginStepDefinition {
     }
 
     //close of all the processes
-    @After
-    public void tearDown(){
-        hisBrowser.quit();
-    }
+//    @After
+//    public void tearDown(){
+//        hisBrowser.quit();
+//    }
 }
