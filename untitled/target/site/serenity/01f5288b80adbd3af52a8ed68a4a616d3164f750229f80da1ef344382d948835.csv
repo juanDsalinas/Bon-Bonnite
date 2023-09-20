@@ -1,16 +1,7 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-<<<<<<< HEAD
 "Login","Successful login","SUCCESS","2023-09-19T15:32:01.6710539-05:00[America/Bogota]","0.0","35.43"
 "Login","Invalid login","SUCCESS","2023-09-19T15:32:37.145514-05:00[America/Bogota]","0.0","18.86"
 "Login","login with empty fields","SUCCESS","2023-09-19T15:32:56.0152335-05:00[America/Bogota]","0.0","32.25"
-"Register","Register Successful","SUCCESS","2023-09-19T12:43:22.5380464-05:00[America/Bogota]","0.0","40.29"
-=======
-"Login","Successful login","SUCCESS","2023-09-19T14:40:22.0737259-05:00[America/Bogota]","0.0","91.82"
-<<<<<<< HEAD
 "Register","Register Successful","SUCCESS","2023-09-19T21:22:12.7113606-05:00[America/Bogota]","0.0","39.3"
 "Register","Register Failed","SUCCESS","2023-09-19T21:22:52.117574-05:00[America/Bogota]","0.0","26.31"
 "Register","Register with empty fields","SUCCESS","2023-09-19T21:23:18.4536726-05:00[America/Bogota]","0.0","22.52"
-=======
-"Register","Register Successful","SUCCESS","2023-09-19T16:09:22.2550485-05:00[America/Bogota]","0.0","49.28"
->>>>>>> 737f3f821285b1ffe6a50743af9a5a80d87c8fd9
->>>>>>> 90baa97c08b849a493b47f6197c9c6a63f2a83fc
