@@ -27,7 +27,7 @@ public class PurchaseStepDefinition {
         OnStage.theActorInTheSpotlight().can(BrowseTheWeb.with(hisBrowser));
     }
 
-<<<<<<< HEAD
+
     // implementation of feature
     @Given("the user is in the main page and clicks on some option of menu navigation")
     public void theUserIsInTheMainPageAndClicksOnSomeOptionOfMenuNavigation() {
@@ -60,18 +60,10 @@ public class PurchaseStepDefinition {
     }
 
 
-
-
-
-    @After
-    public void tearDown(){
-        hisBrowser.quit();
-=======
-
+    // Scenario
     @Given("that the user is on the shoes section")
     public void thatTheUserIsOnTheShoesSection() {
 
->>>>>>> add2fc9b75b4407ddaba9a05c490ee76bddd5eca
     }
 
 
@@ -102,7 +94,6 @@ public class PurchaseStepDefinition {
         // Write code here that turns the phrase above into concrete actions
 
     }
-
 
 //    @After
 //    public void tearDown(){

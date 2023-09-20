@@ -9,9 +9,10 @@ import static net.serenitybdd.screenplay.Tasks.instrumented;
 
 public class ClickOnAccountIconTask implements Task {
     //Click on a menu component
+    // 7 - shoes
     @Override
     public <T extends Actor> void performAs(T actor) {
-        actor.attemptsTo(Click.on(MenuComponent.ACCOUNT_ICON));
+        actor.attemptsTo(Click.on(MenuComponent.ACCOUNT_ICON.of("")));
     }
     public static ClickOnAccountIconTask clickOnAccountIcon(){
         return instrumented(ClickOnAccountIconTask.class);

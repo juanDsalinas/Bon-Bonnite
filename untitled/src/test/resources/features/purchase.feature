@@ -1,12 +1,8 @@
 Feature: purchase flow processes
 
-<<<<<<< HEAD
-  Background: Login Successful
-    Given that the user is on the login page
-=======
+
   Background: Successful login
     Given the user is in the login page
->>>>>>> add2fc9b75b4407ddaba9a05c490ee76bddd5eca
     When the user enter the following credentials
       | document   | password       |
       | 1111111111 | contraseña1234 |
@@ -21,7 +17,6 @@ Feature: purchase flow processes
     And the user clicks on finalizar compra and clicks on continuar
     And the user filled out the form with their data and clicks on pagar
     Then the user should see the payment gateway
-=======
 
   Scenario Outline: buy shoes
     Given that the user is on the shoes section
@@ -36,4 +31,3 @@ Feature: purchase flow processes
     Examples:
       | product | size |
       | 1       | 37   |
->>>>>>> add2fc9b75b4407ddaba9a05c490ee76bddd5eca
