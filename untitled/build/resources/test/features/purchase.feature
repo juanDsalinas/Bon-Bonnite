@@ -7,16 +7,9 @@ Feature: purchase flow processes
       | 1111111111 | contraseña1234 |
     Then the user should see the main page
 
-  Scenario Outline: buy shoes
+  Scenario: buy shoes
     Given that the user is on the "shoes" section
-    When he select the product number
-      | product   |
-      | <product> |
-    And user clicks on buy after selecting size
-      | size   |
-      | <size> |
+    When he select the product number "1" with the size "37"
+    And user clicks on buy button
     Then the user should see the buy car
 
-    Examples:
-      | product | size |
-      | 1       | 37   |

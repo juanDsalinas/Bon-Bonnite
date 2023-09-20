@@ -17,12 +17,16 @@ public class ClickOnMenuCategoriesTask implements Task {
         switch (menuOption) {
             case "shoes":
                 actor.attemptsTo(Click.on(MenuComponent.LBL_MENU_PRODUCT.of("10")));
+                break;
             case "handbags":
                 actor.attemptsTo(Click.on(MenuComponent.LBL_MENU_PRODUCT.of("8")));
+                break;
             case "belts":
                 actor.attemptsTo(Click.on(MenuComponent.LBL_MENU_PRODUCT.of("9")));
+                break;
             case "accessories":
                 actor.attemptsTo(Click.on(MenuComponent.LBL_MENU_PRODUCT.of("7")));
+                break;
         }
     }
 

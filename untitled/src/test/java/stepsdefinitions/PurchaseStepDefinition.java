@@ -12,6 +12,7 @@ import net.serenitybdd.screenplay.actors.OnStage;
 import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.WebDriver;
 import tasks.ClickOnMenuCategoriesTask;
+import tasks.SelectAProductTask;
 
 public class PurchaseStepDefinition {
 
@@ -31,29 +32,15 @@ public class PurchaseStepDefinition {
         OnStage.theActorInTheSpotlight().wasAbleTo(ClickOnMenuCategoriesTask.selectMenuOption(menuOption));
     }
 
-
-    @When("he select the product number")
-    public void heSelectTheProductNumber(io.cucumber.datatable.DataTable dataTable) {
-        // Write code here that turns the phrase above into concrete actions
-        // For automatic transformation, change DataTable to one of
-        // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
-        // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
-        // Double, Byte, Short, Long, BigInteger or BigDecimal.
-        //
-        // For other transformations you can register a DataTableType.
-
+    @When("he select the product number {string} with the size {string}")
+    public void heSelectTheProductNumberWithTheSize(String product, String size) {
+        OnStage.theActorInTheSpotlight().attemptsTo(SelectAProductTask.selectProduct(product,size));
     }
-    @And("user clicks on buy after selecting size")
-    public void userClicksOnBuyAfterSelectingSize(io.cucumber.datatable.DataTable dataTable) {
-        // Write code here that turns the phrase above into concrete actions
-        // For automatic transformation, change DataTable to one of
-        // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
-        // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
-        // Double, Byte, Short, Long, BigInteger or BigDecimal.
-        //
-        // For other transformations you can register a DataTableType.
 
+    @And("user clicks on buy button")
+    public void userClicksOnBuyButton() {
     }
+
     @Then("the user should see the buy car")
     public void theUserShouldSeeTheBuyCar() {
         // Write code here that turns the phrase above into concrete actions
@@ -61,7 +48,9 @@ public class PurchaseStepDefinition {
     }
 
 
-//    @After
+
+
+    //    @After
 //    public void tearDown(){
 //        hisBrowser.quit();
 //    }

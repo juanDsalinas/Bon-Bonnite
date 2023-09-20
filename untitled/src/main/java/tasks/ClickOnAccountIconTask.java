@@ -8,6 +8,7 @@ import userinterfaces.MenuComponent;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
 public class ClickOnAccountIconTask implements Task {
+
     //Click on a menu component
     @Override
     public <T extends Actor> void performAs(T actor) {
