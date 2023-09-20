@@ -1,24 +1,10 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-Serenity report generated 20-09-2023 10:13
-8 test scenarios (8 tests in all, including 7 rows of test data)
-=======
-Serenity report generated 20-09-2023 10:15
-=======
-Serenity report generated 20-09-2023 10:40
->>>>>>> ec575b3c43aa6a06450f70dbd2302b1421e1ec3c
-9 test scenarios (9 tests in all, including 9 rows of test data)
->>>>>>> add2fc9b75b4407ddaba9a05c490ee76bddd5eca
-=======
-Serenity report generated 20-09-2023 11:42
-9 test scenarios (9 tests in all, including 8 rows of test data)
->>>>>>> c5f3bb283bd47722cfc98dc91ae1c5bcf2bd6be2
+Serenity report generated 20-09-2023 18:34
+11 test scenarios (14 tests in all, including 12 rows of test data)
 
-Passed:             6
+Passed:             4
 Pending             1
 Failed:             0
-Failed with errors: 5
+Failed with errors: 6
 Compromised:        0
 Pending:            1
 Ignored:            0

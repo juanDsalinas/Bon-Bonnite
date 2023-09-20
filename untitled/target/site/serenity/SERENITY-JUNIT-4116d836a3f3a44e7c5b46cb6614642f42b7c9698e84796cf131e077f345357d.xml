@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="4" failures="0" name="purchase flow processes" skipped="0" tests="5" time="203.65" timestamp="2023-09-20 06:30:19"><testcase name="buy many products"><error type="java.lang.NullPointerException"/><system-err>null&#13;
+tasks.PurchaseSuccessfulTask.performAs(PurchaseSuccessfulTask.java:24)&#13;
+stepsdefinitions.PurchaseStepDefinition.theUserIsInTheMainPageAndClicksOnSomeCategorie(PurchaseStepDefinition.java:49)&#13;
+✽.the user is in the main page and clicks on some categorie(file:///C:/Users/User/Documents/GitHub/Automatizacion-Selenium/ScreenPlay/Projects/RepoSenaSoft/Bon-Bonnite/untitled/src/test/resources/features/purchase.feature:12)&#13;
+</system-err></testcase><testcase name="buy shoes"/></testsuite>

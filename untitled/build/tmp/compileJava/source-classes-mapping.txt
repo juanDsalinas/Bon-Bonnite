@@ -1,19 +1,19 @@
 tasks/ClickOnMenuNavigation.java
  tasks.ClickOnMenuNavigation
-tasks/ClickOnMenuCategoriesTask.java
- tasks.ClickOnMenuCategoriesTask
+questions/SuccessfulLoginQuestion.java
+ questions.SuccessfulLoginQuestion
 userinterfaces/AccountComponent.java
  userinterfaces.AccountComponent
-userinterfaces/MenuComponent.java
- userinterfaces.MenuComponent
+models/RegisterModel.java
+ models.RegisterModel
 models/LoginModel.java
  models.LoginModel
 questions/EmptyLoginQuestion.java
  questions.EmptyLoginQuestion
 questions/RegisterQuestionEmpty.java
  questions.RegisterQuestionEmpty
-tasks/SelectAProductTask.java
- tasks.SelectAProductTask
+models/PurchaseSuccessful.java
+ models.PurchaseSuccessful
 questions/LoginQuestion.java
  questions.LoginQuestion
 userinterfaces/LoginPage.java
@@ -22,19 +22,23 @@ tasks/RegisterTask.java
  tasks.RegisterTask
 userinterfaces/RegisterPage.java
  userinterfaces.RegisterPage
-tasks/ClickOnAccountIconTask.java
- tasks.ClickOnAccountIconTask
-userinterfaces/ShoesPage.java
- userinterfaces.ShoesPage
-questions/InvalidLoginQuestion.java
- questions.InvalidLoginQuestion
-questions/RegisterQuestion.java
- questions.RegisterQuestion
-questions/SuccessfulLoginQuestion.java
- questions.SuccessfulLoginQuestion
-models/RegisterModel.java
- models.RegisterModel
 questions/RegisterInvalidQuestion.java
  questions.RegisterInvalidQuestion
 tasks/LoginTask.java
  tasks.LoginTask
+questions/InvalidLoginQuestion.java
+ questions.InvalidLoginQuestion
+questions/RegisterQuestion.java
+ questions.RegisterQuestion
+tasks/ClickOnMenuCategoriesTask.java
+ tasks.ClickOnMenuCategoriesTask
+userinterfaces/MenuComponent.java
+ userinterfaces.MenuComponent
+tasks/ClickOnAccountIconTask.java
+ tasks.ClickOnAccountIconTask
+userinterfaces/ShoesPage.java
+ userinterfaces.ShoesPage
+tasks/SelectAProductTask.java
+ tasks.SelectAProductTask
+tasks/PurchaseSuccessfulTask.java
+ tasks.PurchaseSuccessfulTask
