@@ -4,7 +4,7 @@
   <system-out><![CDATA[
 1 Scenarios (?[32m1 passed?[0m)
 7 Steps (?[32m7 passed?[0m)
-1m0,048s
+0m56,724s
 
 
 ]]></system-out>
@@ -27,7 +27,7 @@
 -------------------------------------------------------------------------------------
 
 [Test worker] INFO  - Test Suite Started: purchase flow processes
-[pool-1-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@7b423f90: Generating report for test outcome: purchase flow processes:buy shoes
-[pool-2-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@3a5e4f32: Generating report for test outcome: purchase flow processes:buy shoes
+[pool-1-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@72bce309: Generating report for test outcome: purchase flow processes:buy shoes
+[pool-2-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@42805abe: Generating report for test outcome: purchase flow processes:buy shoes
 ]]></system-err>
 </testsuite>

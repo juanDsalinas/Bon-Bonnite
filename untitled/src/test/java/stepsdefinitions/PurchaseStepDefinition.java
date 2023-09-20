@@ -11,6 +11,7 @@ import net.serenitybdd.screenplay.actors.Cast;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.WebDriver;
+import tasks.ClickOnBuyButtonTask;
 import tasks.ClickOnMenuCategoriesTask;
 import tasks.SelectAProductTask;
 
@@ -39,6 +40,7 @@ public class PurchaseStepDefinition {
 
     @And("user clicks on buy button")
     public void userClicksOnBuyButton() {
+        OnStage.theActorInTheSpotlight().attemptsTo(ClickOnBuyButtonTask.clickOnBuyButton());
     }
 
     @Then("the user should see the buy car")
