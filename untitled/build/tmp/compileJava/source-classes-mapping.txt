@@ -18,7 +18,9 @@ tasks/RegisterTask.java
  tasks.RegisterTask
 userinterfaces/RegisterPage.java
  userinterfaces.RegisterPage
-tasks/LoginTask.java
- tasks.LoginTask
+questions/RegisterQuestionEmpty.java
+ questions.RegisterQuestionEmpty
 questions/RegisterInvalidQuestion.java
  questions.RegisterInvalidQuestion
+tasks/LoginTask.java
+ tasks.LoginTask

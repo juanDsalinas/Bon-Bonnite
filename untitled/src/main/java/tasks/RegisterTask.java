@@ -11,11 +11,15 @@ import net.serenitybdd.screenplay.actions.Scroll;
 import userinterfaces.RegisterPage;
 
 public class RegisterTask implements Task {
+
+    // instancia del datatable
     RegisterModel credentials;
 
+    // constructor de para las credenciales
     public RegisterTask(RegisterModel credentials) {
         this.credentials = credentials;
     }
+
 
     @Override
     public <T extends Actor> void performAs(T actor) {
@@ -30,6 +34,7 @@ public class RegisterTask implements Task {
                 Click.on(RegisterPage.BTN_REGISTER));
     }
 
+    // creacion del objeto LoginTask
     public static RegisterTask enter (RegisterModel credentials){
         return Tasks.instrumented(RegisterTask.class,credentials);
     }

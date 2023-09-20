@@ -3,6 +3,11 @@ package userinterfaces;
 import net.serenitybdd.screenplay.targets.Target;
 
 public class RegisterPage {
+    // mapeo del titulo "Acceder"
+    public static final Target LBL_USERNAME = Target.the("the label of username")
+            .locatedBy("//div[@class='u-column1 col-1']/h2");
+
+    // mapeo de los elementos del registro
     public static final Target TXT_USERNAME = Target.the("the field text to enter the username")
             .locatedBy("//input[@id='reg_username']");
 
@@ -20,9 +25,5 @@ public class RegisterPage {
 
     public static final Target ALT_ERROR_MESSAGE = Target.the("registration error alert")
             .locatedBy("//ul[@class='woocommerce-error']//li[contains(text(),'{0}')]");
-
-
-
-//*[@id="customer_login"]/div[1]/form/p[1]/label
 
 }

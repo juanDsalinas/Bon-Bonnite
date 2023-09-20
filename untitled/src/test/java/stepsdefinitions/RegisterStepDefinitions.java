@@ -19,6 +19,7 @@ import org.hamcrest.Matchers;
 import org.openqa.selenium.WebDriver;
 import questions.RegisterInvalidQuestion;
 import questions.RegisterQuestion;
+import questions.RegisterQuestionEmpty;
 import tasks.ClickOnAccountIconTask;
 import tasks.RegisterTask;
 
@@ -38,7 +39,7 @@ public class RegisterStepDefinitions {
         OnStage.theActorInTheSpotlight().can(BrowseTheWeb.with(hisBrowser));
     }
 
-    // tabla para iterar sobre todos los datos del datatabla
+    // tabla para iterar sobre todos los datos del datatable
     @DataTableType
     public RegisterModel userData(Map <String, String> value){
         return new RegisterModel(
@@ -71,9 +72,7 @@ public class RegisterStepDefinitions {
     }
 
 
-    // Escenario Fallido
-
-
+    // Scenario Fallido
     @When("the user enter the failed credentials")
     public void theUserEnterTheFailedCredentials(List<RegisterModel> credentialList) {
         OnStage.theActorInTheSpotlight().attemptsTo(ClickOnAccountIconTask.clickOnAccountIcon());
@@ -82,10 +81,11 @@ public class RegisterStepDefinitions {
         OnStage.theActorInTheSpotlight().attemptsTo(RegisterTask.enter(credentials));
     }
 
+    // Asercion - Fallido
     @Then("the user should see a error message")
     public void theUserShouldSeeAErrorMessage() {
         OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(RegisterInvalidQuestion.invalid()
-        , Matchers.is(true)));
+        , Matchers.is("Acceder")));
     }
 
     // Scenario Empty
@@ -97,6 +97,15 @@ public class RegisterStepDefinitions {
         OnStage.theActorInTheSpotlight().attemptsTo(RegisterTask.enter(credentials));
     }
 
+    // Asercion Empty
+    @Then("the user should see a error message of empty credentials")
+    public void theUserShouldSeeAErrorMessageOfEmptyCredentials() {
+        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(RegisterQuestionEmpty.empty()
+        , Matchers.is("Acceder")));
+    }
+
+
+    // configuracion despues de ejecutar los escenarios
     @After
     public void tearDown(){
         hisBrowser.quit();

@@ -1,4 +1,2 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"Register","Register Successful","ERROR","2023-09-19T16:26:15.3706535-05:00[America/Bogota]","0.0","68.27"
-"Register","Register Failed","ERROR","2023-09-19T16:27:24.7969376-05:00[America/Bogota]","0.0","61.45"
 "Register","Register Empty","ERROR","2023-09-19T16:28:26.275858-05:00[America/Bogota]","0.0","45.41"
