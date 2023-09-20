@@ -7,6 +7,7 @@ Feature: purchase flow processes
       | 1111111111 | contraseña1234 |
     Then the user should see the main page
 
+
   Scenario: buy many products
     Given the user is in the main page and clicks on some categorie
       | categories |
@@ -14,16 +15,18 @@ Feature: purchase flow processes
     When the user add a product into the cart
       | numProduct | size |
       | 1          | 10   |
-    And the user repeat this process other twice
+    And the user repeat this process again
       | categories | numProduct | size |
       | 10         | 1          | 10   |
       | 10         | 2          | 10   |
+    And the user repeat this process again
+      | categories | numProduct | size |
+      | 10         | 2          | 12   |
 
     And the user clicks on the cart and see cart
     And the user clicks on finalize purchase and clicks on continue
     And the user filled out the form with their data and clicks on buy
     Then the user should see the payment gateway
-
 
 
   Scenario: buy shoes

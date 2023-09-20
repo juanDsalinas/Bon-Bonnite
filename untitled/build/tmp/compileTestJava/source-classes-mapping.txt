@@ -1,12 +1,12 @@
 runners/RegisterRunner.java
  runners.RegisterRunner
-stepsdefinitions/LoginStepDefinition.java
- stepsdefinitions.LoginStepDefinition
+runners/PurchaseRunner.java
+ runners.PurchaseRunner
 runners/LoginRunner.java
  runners.LoginRunner
+stepsdefinitions/LoginStepDefinition.java
+ stepsdefinitions.LoginStepDefinition
 stepsdefinitions/PurchaseStepDefinition.java
  stepsdefinitions.PurchaseStepDefinition
 stepsdefinitions/RegisterStepDefinitions.java
  stepsdefinitions.RegisterStepDefinitions
-runners/PurchaseRunner.java
- runners.PurchaseRunner

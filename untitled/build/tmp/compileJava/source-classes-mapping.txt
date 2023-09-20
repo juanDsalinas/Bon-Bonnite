@@ -12,6 +12,8 @@ questions/EmptyLoginQuestion.java
  questions.EmptyLoginQuestion
 questions/RegisterQuestionEmpty.java
  questions.RegisterQuestionEmpty
+tasks/SelectAProductTask.java
+ tasks.SelectAProductTask
 questions/LoginQuestion.java
  questions.LoginQuestion
 userinterfaces/LoginPage.java
@@ -22,6 +24,8 @@ userinterfaces/RegisterPage.java
  userinterfaces.RegisterPage
 tasks/ClickOnAccountIconTask.java
  tasks.ClickOnAccountIconTask
+userinterfaces/ShoesPage.java
+ userinterfaces.ShoesPage
 questions/InvalidLoginQuestion.java
  questions.InvalidLoginQuestion
 questions/RegisterQuestion.java

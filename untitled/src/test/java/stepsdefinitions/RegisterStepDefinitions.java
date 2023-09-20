@@ -54,7 +54,6 @@ public class RegisterStepDefinitions {
         OnStage.theActorInTheSpotlight().wasAbleTo(Open.url("https://www.bon-bonite.com/"));
     }
 
-
     @When("the user enter ethe credentials")
     public void theUserEnterEtheCredentials(List<RegisterModel> credentialsList) {
         OnStage.theActorInTheSpotlight().attemptsTo(ClickOnAccountIconTask.clickOnAccountIcon());

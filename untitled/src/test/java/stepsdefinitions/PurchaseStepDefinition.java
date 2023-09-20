@@ -29,11 +29,11 @@ public class PurchaseStepDefinition {
         OnStage.theActorInTheSpotlight().can(BrowseTheWeb.with(hisBrowser));
     }
 
-    // implementation of feature
-    @Given("the user is in the main page and clicks on some option of menu navigation")
-    public void theUserIsInTheMainPageAndClicksOnSomeOptionOfMenuNavigation() {
-        OnStage.theActorInTheSpotlight().wasAbleTo();
-    }
+    // implementation the feature of me
+
+
+
+
 
     // Scenario Bulla
     @Given("that the user is on the {string} section")
