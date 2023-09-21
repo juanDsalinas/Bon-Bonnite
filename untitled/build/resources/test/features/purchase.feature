@@ -8,32 +8,18 @@ Feature: purchase flow processes
     Then the user should see the main page
 
 
-  Scenario Outline: buy many products
-    Given the user is in the main page and clicks on some categorie
-      | categories   |
-      | <categories> |
-    When the user add a product into the cart
-      | numProduct   | size   |
-      | <numProduct> | <size> |
-    And the user repeat this process again
-      | categories   | numProduct   | size   |
-      | <categories> | <numProduct> | <size> |
-      | <categories> | <numProduct> | <size> |
-    And the user repeat this process again
-      | categories   | numProduct   | size   |
-      | <categories> | <numProduct> | <size> |
-
-    And the user clicks on the cart and see cart
-    And the user clicks on finalize purchase and clicks on continue
-    And the user filled out the form with their data and clicks on buy
-    Then the user should see the payment gateway
+  Scenario Outline: Add many products on the cart
+    Given the user is in the main page and clicks on "shoes" categorie
+    When the user add a tree product into the cart
+      | categories   | numProduct   | size   | color   |
+      | <categories> | <numProduct> | <size> | <color> |
+    And the user clicks on the icon cart
+    Then the user should see the content of the cart
 
     Examples:
-      | categories | numProduct | size |
-      | 10         | 1          | 4    |
-      | 10         | 1          | 6    |
-      | 10         | 2          | 7    |
-      | 10         | 3          | 8    |
+      | categories | numProduct | size | color |
+      | 10         | 1          | 37   | 1     |
+
 
   Scenario: buy shoes
     Given that the user is on the "shoes" section

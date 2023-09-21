@@ -23,13 +23,13 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">5</div>
+<div class="counter">2</div>
 <p>tests</p>
 </div>
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">4</div>
+<div class="counter">0</div>
 <p>failures</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">3m24.23s</div>
+<div class="counter">1m50.93s</div>
 <p>duration</p>
 </div>
 </td>
@@ -50,8 +50,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox failures" id="successRate">
-<div class="percent">20%</div>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
 <p>successful</p>
 </div>
 </td>
@@ -61,132 +61,16 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Failed tests</a>
+<a href="#tab0">Tests</a>
 </li>
 <li>
-<a href="#tab1">Tests</a>
+<a href="#tab1">Standard output</a>
 </li>
 <li>
-<a href="#tab2">Standard output</a>
-</li>
-<li>
-<a href="#tab3">Standard error</a>
+<a href="#tab2">Standard error</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
-<h2>Failed tests</h2>
-<div class="test">
-<a name="buy many products #1"></a>
-<h3 class="failures">buy many products #1</h3>
-<span class="code">
-<pre>java.lang.NullPointerException
-	at java.base/java.util.regex.Matcher.appendExpandedReplacement(Matcher.java:1015)
-	at java.base/java.util.regex.Matcher.appendReplacement(Matcher.java:998)
-	at java.base/java.util.regex.Matcher.replaceAll(Matcher.java:1182)
-	at java.base/java.lang.String.replaceAll(String.java:2126)
-	at net.serenitybdd.screenplay.targets.TargetSelectorWithVariables.resolvedWith(TargetSelectorWithVariables.java:17)
-	at net.serenitybdd.screenplay.targets.XPathOrCssTarget.instantiated(XPathOrCssTarget.java:61)
-	at net.serenitybdd.screenplay.targets.XPathOrCssTarget.of(XPathOrCssTarget.java:42)
-	at tasks.PurchaseSuccessfulTask.performAs(PurchaseSuccessfulTask.java:24)
-	at tasks.PurchaseSuccessfulTask$ByteBuddy$Wn0BxBMT.performAs$accessor$A2sXYEsd(Unknown Source)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:492)
-	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:472)
-	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:445)
-	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:201)
-	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:188)
-	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:76)
-	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
-	at tasks.PurchaseSuccessfulTask$ByteBuddy$Wn0BxBMT.performAs(Unknown Source)
-	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:252)
-	at net.serenitybdd.screenplay.Actor.perform(Actor.java:233)
-	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:178)
-	at stepsdefinitions.PurchaseStepDefinition.theUserIsInTheMainPageAndClicksOnSomeCategorie(PurchaseStepDefinition.java:49)
-	at ✽.the user is in the main page and clicks on some categorie(file:///C:/Users/User/Documents/GitHub/Automatizacion-Selenium/ScreenPlay/Projects/RepoSenaSoft/Bon-Bonnite/untitled/src/test/resources/features/purchase.feature:12)
-</pre>
-</span>
-</div>
-<div class="test">
-<a name="buy many products #2"></a>
-<h3 class="failures">buy many products #2</h3>
-<span class="code">
-<pre>java.lang.NullPointerException
-	at java.base/java.util.regex.Matcher.appendExpandedReplacement(Matcher.java:1015)
-	at java.base/java.util.regex.Matcher.appendReplacement(Matcher.java:998)
-	at java.base/java.util.regex.Matcher.replaceAll(Matcher.java:1182)
-	at java.base/java.lang.String.replaceAll(String.java:2126)
-	at net.serenitybdd.screenplay.targets.TargetSelectorWithVariables.resolvedWith(TargetSelectorWithVariables.java:17)
-	at net.serenitybdd.screenplay.targets.XPathOrCssTarget.instantiated(XPathOrCssTarget.java:61)
-	at net.serenitybdd.screenplay.targets.XPathOrCssTarget.of(XPathOrCssTarget.java:42)
-	at tasks.PurchaseSuccessfulTask.performAs(PurchaseSuccessfulTask.java:24)
-	at tasks.PurchaseSuccessfulTask$ByteBuddy$Wn0BxBMT.performAs$accessor$A2sXYEsd(Unknown Source)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:492)
-	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:472)
-	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:445)
-	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:201)
-	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:188)
-	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:76)
-	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
-	at tasks.PurchaseSuccessfulTask$ByteBuddy$Wn0BxBMT.performAs(Unknown Source)
-	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:252)
-	at net.serenitybdd.screenplay.Actor.perform(Actor.java:233)
-	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:178)
-	at stepsdefinitions.PurchaseStepDefinition.theUserIsInTheMainPageAndClicksOnSomeCategorie(PurchaseStepDefinition.java:49)
-	at ✽.the user is in the main page and clicks on some categorie(file:///C:/Users/User/Documents/GitHub/Automatizacion-Selenium/ScreenPlay/Projects/RepoSenaSoft/Bon-Bonnite/untitled/src/test/resources/features/purchase.feature:12)
-</pre>
-</span>
-</div>
-<div class="test">
-<a name="buy many products #3"></a>
-<h3 class="failures">buy many products #3</h3>
-<span class="code">
-<pre>java.lang.NullPointerException
-	at java.base/java.util.regex.Matcher.appendExpandedReplacement(Matcher.java:1015)
-	at java.base/java.util.regex.Matcher.appendReplacement(Matcher.java:998)
-	at java.base/java.util.regex.Matcher.replaceAll(Matcher.java:1182)
-	at java.base/java.lang.String.replaceAll(String.java:2126)
-	at net.serenitybdd.screenplay.targets.TargetSelectorWithVariables.resolvedWith(TargetSelectorWithVariables.java:17)
-	at net.serenitybdd.screenplay.targets.XPathOrCssTarget.instantiated(XPathOrCssTarget.java:61)
-	at net.serenitybdd.screenplay.targets.XPathOrCssTarget.of(XPathOrCssTarget.java:42)
-	at tasks.PurchaseSuccessfulTask.performAs(PurchaseSuccessfulTask.java:24)
-	at tasks.PurchaseSuccessfulTask$ByteBuddy$Wn0BxBMT.performAs$accessor$A2sXYEsd(Unknown Source)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:492)
-	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:472)
-	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:445)
-	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:201)
-	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:188)
-	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:76)
-	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
-	at tasks.PurchaseSuccessfulTask$ByteBuddy$Wn0BxBMT.performAs(Unknown Source)
-	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:252)
-	at net.serenitybdd.screenplay.Actor.perform(Actor.java:233)
-	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:178)
-	at stepsdefinitions.PurchaseStepDefinition.theUserIsInTheMainPageAndClicksOnSomeCategorie(PurchaseStepDefinition.java:49)
-	at ✽.the user is in the main page and clicks on some categorie(file:///C:/Users/User/Documents/GitHub/Automatizacion-Selenium/ScreenPlay/Projects/RepoSenaSoft/Bon-Bonnite/untitled/src/test/resources/features/purchase.feature:12)
-</pre>
-</span>
-</div>
-<div class="test">
-<a name="buy many products #4"></a>
-<h3 class="failures">buy many products #4</h3>
-<span class="code">
-<pre>java.lang.NullPointerException
-</pre>
-</span>
-</div>
-</div>
-<div id="tab1" class="tab">
 <h2>Tests</h2>
 <table>
 <thead>
@@ -197,64 +81,27 @@
 </tr>
 </thead>
 <tr>
-<td class="failures">buy many products #1</td>
-<td class="failures">40.224s</td>
-<td class="failures">failed</td>
-</tr>
-<tr>
-<td class="failures">buy many products #2</td>
-<td class="failures">29.030s</td>
-<td class="failures">failed</td>
-</tr>
-<tr>
-<td class="failures">buy many products #3</td>
-<td class="failures">38.600s</td>
-<td class="failures">failed</td>
-</tr>
-<tr>
-<td class="failures">buy many products #4</td>
-<td class="failures">33.696s</td>
-<td class="failures">failed</td>
+<td class="success">Add many products on the cart</td>
+<td class="success">54.548s</td>
+<td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">buy shoes</td>
-<td class="success">1m2.68s</td>
+<td class="success">56.379s</td>
 <td class="success">passed</td>
 </tr>
 </table>
 </div>
-<div id="tab2" class="tab">
+<div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
 <pre>Step argument class io.cucumber.core.gherkin.messages.GherkinMessagesDataTableArgument
 Step argument class io.cucumber.core.gherkin.messages.GherkinMessagesDataTableArgument
 Step argument class io.cucumber.core.gherkin.messages.GherkinMessagesDataTableArgument
-Step argument class io.cucumber.core.gherkin.messages.GherkinMessagesDataTableArgument
-Step argument class io.cucumber.core.gherkin.messages.GherkinMessagesDataTableArgument
-Step argument class io.cucumber.core.gherkin.messages.GherkinMessagesDataTableArgument
-Step argument class io.cucumber.core.gherkin.messages.GherkinMessagesDataTableArgument
-Step argument class io.cucumber.core.gherkin.messages.GherkinMessagesDataTableArgument
-Step argument class io.cucumber.core.gherkin.messages.GherkinMessagesDataTableArgument
-Step argument class io.cucumber.core.gherkin.messages.GherkinMessagesDataTableArgument
-Step argument class io.cucumber.core.gherkin.messages.GherkinMessagesDataTableArgument
-Step argument class io.cucumber.core.gherkin.messages.GherkinMessagesDataTableArgument
-Step argument class io.cucumber.core.gherkin.messages.GherkinMessagesDataTableArgument
-Step argument class io.cucumber.core.gherkin.messages.GherkinMessagesDataTableArgument
-Step argument class io.cucumber.core.gherkin.messages.GherkinMessagesDataTableArgument
-Step argument class io.cucumber.core.gherkin.messages.GherkinMessagesDataTableArgument
-Step argument class io.cucumber.core.gherkin.messages.GherkinMessagesDataTableArgument
-Step argument class io.cucumber.core.gherkin.messages.GherkinMessagesDataTableArgument
-Step argument class io.cucumber.core.gherkin.messages.GherkinMessagesDataTableArgument
-Step argument class io.cucumber.core.gherkin.messages.GherkinMessagesDataTableArgument
-Step argument class io.cucumber.core.gherkin.messages.GherkinMessagesDataTableArgument
-Step argument class io.cucumber.core.gherkin.messages.GherkinMessagesDataTableArgument
-Step argument class io.cucumber.core.gherkin.messages.GherkinMessagesDataTableArgument
-Step argument class io.cucumber.core.gherkin.messages.GherkinMessagesDataTableArgument
-Step argument class io.cucumber.core.gherkin.messages.GherkinMessagesDataTableArgument
 </pre>
 </span>
 </div>
-<div id="tab3" class="tab">
+<div id="tab2" class="tab">
 <h2>Standard error</h2>
 <span class="code">
 <pre>[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/User/Documents/GitHub/Automatizacion-Selenium/ScreenPlay/Projects/RepoSenaSoft/Bon-Bonnite/untitled/src/test/resources/features/purchase.feature
@@ -265,7 +112,7 @@ Step argument class io.cucumber.core.gherkin.messages.GherkinMessagesDataTableAr
    | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
    |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
 
-buy many products(purchase-flow-processes;buy-many-products)
+Add many products on the cart(purchase-flow-processes;add-many-products-on-the-cart)
 --------------------------------------------------------------------------------
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Using automatically driver download
 [Test worker] ERROR io.github.bonigarcia.wdm.online.HttpClient - Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_117
@@ -273,74 +120,20 @@ buy many products(purchase-flow-processes;buy-many-products)
 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win32\114.0.5735.90\chromedriver.exe
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: --start-maximized, goog:chromeOptions: {args: [--start-maximized], extensions: []}, loggingPrefs: org.openqa.selenium.logging...}
-Starting ChromeDriver 117.0.5938.88 (be6afae4721209be42944bbcd325665f9f44563b-refs/branch-heads/5938_62@{#9}) on port 30792
+Starting ChromeDriver 117.0.5938.88 (be6afae4721209be42944bbcd325665f9f44563b-refs/branch-heads/5938_62@{#9}) on port 7155
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-sep 20, 2023 6:30:26 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+sep 20, 2023 9:40:15 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMACIÓN: Detected dialect: W3C
-[Test worker] ERROR  - 
-  _____   ___   ___   _____     ___   ___   ___    ___    ___ 
- |_   _| | __| / __| |_   _|   | __| | _ \ | _ \  / _ \  | _ \
-   | |   | _|  \__ \   | |     | _|  |   / |   / | (_) | |   /
-   |_|   |___| |___/   |_|     |___| |_|_\ |_|_\  \___/  |_|_\
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
 
-buy many products
----------------------------------------------------------------
-[Test worker] ERROR  -     Test failed at step: User purchase successful task
-[Test worker] ERROR  -     
-[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/User/Documents/GitHub/Automatizacion-Selenium/ScreenPlay/Projects/RepoSenaSoft/Bon-Bonnite/untitled/src/test/resources/features/purchase.feature
-[Test worker] WARN io.cucumber.core.plugin.SerenityReporter - Feature from file:///C:/Users/User/Documents/GitHub/Automatizacion-Selenium/ScreenPlay/Projects/RepoSenaSoft/Bon-Bonnite/untitled/src/test/resources/features/purchase.feature is not under the 'features' directory. Requirements report will not be correctly generated!
-[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Using automatically driver download
-[Test worker] ERROR io.github.bonigarcia.wdm.online.HttpClient - Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_117
-[Test worker] WARN io.github.bonigarcia.wdm.versions.VersionDetector - Exception reading https://chromedriver.storage.googleapis.com/LATEST_RELEASE_117 to get latest version of chromedriver (Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_117)
-[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win32\114.0.5735.90\chromedriver.exe
-[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
-[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: --start-maximized, goog:chromeOptions: {args: [--start-maximized], extensions: []}, loggingPrefs: org.openqa.selenium.logging...}
-Starting ChromeDriver 117.0.5938.88 (be6afae4721209be42944bbcd325665f9f44563b-refs/branch-heads/5938_62@{#9}) on port 33396
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-sep 20, 2023 6:31:05 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
-INFORMACIÓN: Detected dialect: W3C
-[Test worker] ERROR  - 
-  _____   ___   ___   _____     ___   ___   ___    ___    ___ 
- |_   _| | __| / __| |_   _|   | __| | _ \ | _ \  / _ \  | _ \
-   | |   | _|  \__ \   | |     | _|  |   / |   / | (_) | |   /
-   |_|   |___| |___/   |_|     |___| |_|_\ |_|_\  \___/  |_|_\
-
-buy many products
----------------------------------------------------------------
-[Test worker] ERROR  -     Test failed at step: User purchase successful task
-[Test worker] ERROR  -     
-[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/User/Documents/GitHub/Automatizacion-Selenium/ScreenPlay/Projects/RepoSenaSoft/Bon-Bonnite/untitled/src/test/resources/features/purchase.feature
-[Test worker] WARN io.cucumber.core.plugin.SerenityReporter - Feature from file:///C:/Users/User/Documents/GitHub/Automatizacion-Selenium/ScreenPlay/Projects/RepoSenaSoft/Bon-Bonnite/untitled/src/test/resources/features/purchase.feature is not under the 'features' directory. Requirements report will not be correctly generated!
-[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Using automatically driver download
-[Test worker] ERROR io.github.bonigarcia.wdm.online.HttpClient - Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_117
-[Test worker] WARN io.github.bonigarcia.wdm.versions.VersionDetector - Exception reading https://chromedriver.storage.googleapis.com/LATEST_RELEASE_117 to get latest version of chromedriver (Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_117)
-[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win32\114.0.5735.90\chromedriver.exe
-[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
-[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: --start-maximized, goog:chromeOptions: {args: [--start-maximized], extensions: []}, loggingPrefs: org.openqa.selenium.logging...}
-Starting ChromeDriver 117.0.5938.88 (be6afae4721209be42944bbcd325665f9f44563b-refs/branch-heads/5938_62@{#9}) on port 5084
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-sep 20, 2023 6:31:36 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
-INFORMACIÓN: Detected dialect: W3C
-[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/User/Documents/GitHub/Automatizacion-Selenium/ScreenPlay/Projects/RepoSenaSoft/Bon-Bonnite/untitled/src/test/resources/features/purchase.feature
-[Test worker] WARN io.cucumber.core.plugin.SerenityReporter - Feature from file:///C:/Users/User/Documents/GitHub/Automatizacion-Selenium/ScreenPlay/Projects/RepoSenaSoft/Bon-Bonnite/untitled/src/test/resources/features/purchase.feature is not under the 'features' directory. Requirements report will not be correctly generated!
-[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Using automatically driver download
-[Test worker] ERROR io.github.bonigarcia.wdm.online.HttpClient - Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_117
-[Test worker] WARN io.github.bonigarcia.wdm.versions.VersionDetector - Exception reading https://chromedriver.storage.googleapis.com/LATEST_RELEASE_117 to get latest version of chromedriver (Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_117)
-[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win32\114.0.5735.90\chromedriver.exe
-[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
-[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: --start-maximized, goog:chromeOptions: {args: [--start-maximized], extensions: []}, loggingPrefs: org.openqa.selenium.logging...}
-Starting ChromeDriver 117.0.5938.88 (be6afae4721209be42944bbcd325665f9f44563b-refs/branch-heads/5938_62@{#9}) on port 1469
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-sep 20, 2023 6:32:09 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
-INFORMACIÓN: Detected dialect: W3C
+Add many products on the cart
+----------------------------------------------------------------------
 [Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/User/Documents/GitHub/Automatizacion-Selenium/ScreenPlay/Projects/RepoSenaSoft/Bon-Bonnite/untitled/src/test/resources/features/purchase.feature
 [Test worker] WARN io.cucumber.core.plugin.SerenityReporter - Feature from file:///C:/Users/User/Documents/GitHub/Automatizacion-Selenium/ScreenPlay/Projects/RepoSenaSoft/Bon-Bonnite/untitled/src/test/resources/features/purchase.feature is not under the 'features' directory. Requirements report will not be correctly generated!
 [Test worker] INFO  - 
@@ -357,11 +150,11 @@ buy shoes(purchase-flow-processes;buy-shoes)
 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win32\114.0.5735.90\chromedriver.exe
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: --start-maximized, goog:chromeOptions: {args: [--start-maximized], extensions: []}, loggingPrefs: org.openqa.selenium.logging...}
-Starting ChromeDriver 117.0.5938.88 (be6afae4721209be42944bbcd325665f9f44563b-refs/branch-heads/5938_62@{#9}) on port 24546
+Starting ChromeDriver 117.0.5938.88 (be6afae4721209be42944bbcd325665f9f44563b-refs/branch-heads/5938_62@{#9}) on port 48908
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-sep 20, 2023 6:32:43 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+sep 20, 2023 9:41:05 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMACIÓN: Detected dialect: W3C
 [Test worker] INFO  - 
   _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
@@ -382,7 +175,7 @@ buy shoes
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 6.8.3</a> at 20 sep 2023 18:34:05</p>
+<a href="http://www.gradle.org">Gradle 6.8.3</a> at 20 sep 2023 21:42:08</p>
 </div>
 </div>
 </body>

@@ -12,8 +12,8 @@ questions/EmptyLoginQuestion.java
  questions.EmptyLoginQuestion
 questions/RegisterQuestionEmpty.java
  questions.RegisterQuestionEmpty
-models/PurchaseSuccessful.java
- models.PurchaseSuccessful
+tasks/ClickOnMenuCategoriesTask.java
+ tasks.ClickOnMenuCategoriesTask
 questions/LoginQuestion.java
  questions.LoginQuestion
 userinterfaces/LoginPage.java
@@ -30,15 +30,17 @@ questions/InvalidLoginQuestion.java
  questions.InvalidLoginQuestion
 questions/RegisterQuestion.java
  questions.RegisterQuestion
-tasks/ClickOnMenuCategoriesTask.java
- tasks.ClickOnMenuCategoriesTask
-userinterfaces/MenuComponent.java
- userinterfaces.MenuComponent
 tasks/ClickOnAccountIconTask.java
  tasks.ClickOnAccountIconTask
-userinterfaces/ShoesPage.java
- userinterfaces.ShoesPage
-tasks/SelectAProductTask.java
- tasks.SelectAProductTask
+userinterfaces/MenuComponent.java
+ userinterfaces.MenuComponent
 tasks/PurchaseSuccessfulTask.java
  tasks.PurchaseSuccessfulTask
+models/PurchaseSuccessfulModel.java
+ models.PurchaseSuccessfulModel
+tasks/SelectAProductTask.java
+ tasks.SelectAProductTask
+userinterfaces/ShoesPage.java
+ userinterfaces.ShoesPage
+tasks/PurchaseSuccessfulTwoTask.java
+ tasks.PurchaseSuccessfulTwoTask

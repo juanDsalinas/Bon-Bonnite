@@ -86,102 +86,9 @@
 <h2>Standard output</h2>
 <span class="code">
 <pre>
-?[31mFailed scenarios:?[0m
-file:///C:/Users/User/Documents/GitHub/Automatizacion-Selenium/ScreenPlay/Projects/RepoSenaSoft/Bon-Bonnite/untitled/src/test/resources/features/purchase.feature:33 # buy many products
-file:///C:/Users/User/Documents/GitHub/Automatizacion-Selenium/ScreenPlay/Projects/RepoSenaSoft/Bon-Bonnite/untitled/src/test/resources/features/purchase.feature:34 # buy many products
-file:///C:/Users/User/Documents/GitHub/Automatizacion-Selenium/ScreenPlay/Projects/RepoSenaSoft/Bon-Bonnite/untitled/src/test/resources/features/purchase.feature:35 # buy many products
-file:///C:/Users/User/Documents/GitHub/Automatizacion-Selenium/ScreenPlay/Projects/RepoSenaSoft/Bon-Bonnite/untitled/src/test/resources/features/purchase.feature:36 # buy many products
-
-5 Scenarios (?[31m4 failed?[0m, ?[32m1 passed?[0m)
-51 Steps (?[31m4 failed?[0m, ?[36m28 skipped?[0m, ?[32m19 passed?[0m)
-3m24.653s
-
-
-java.lang.NullPointerException
-	at java.base/java.util.regex.Matcher.appendExpandedReplacement(Matcher.java:1015)
-	at java.base/java.util.regex.Matcher.appendReplacement(Matcher.java:998)
-	at java.base/java.util.regex.Matcher.replaceAll(Matcher.java:1182)
-	at java.base/java.lang.String.replaceAll(String.java:2126)
-	at net.serenitybdd.screenplay.targets.TargetSelectorWithVariables.resolvedWith(TargetSelectorWithVariables.java:17)
-	at net.serenitybdd.screenplay.targets.XPathOrCssTarget.instantiated(XPathOrCssTarget.java:61)
-	at net.serenitybdd.screenplay.targets.XPathOrCssTarget.of(XPathOrCssTarget.java:42)
-	at tasks.PurchaseSuccessfulTask.performAs(PurchaseSuccessfulTask.java:24)
-	at tasks.PurchaseSuccessfulTask$ByteBuddy$Wn0BxBMT.performAs$accessor$A2sXYEsd(Unknown Source)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:492)
-	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:472)
-	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:445)
-	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:201)
-	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:188)
-	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:76)
-	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
-	at tasks.PurchaseSuccessfulTask$ByteBuddy$Wn0BxBMT.performAs(Unknown Source)
-	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:252)
-	at net.serenitybdd.screenplay.Actor.perform(Actor.java:233)
-	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:178)
-	at stepsdefinitions.PurchaseStepDefinition.theUserIsInTheMainPageAndClicksOnSomeCategorie(PurchaseStepDefinition.java:49)
-	at ?.the user is in the main page and clicks on some categorie(file:///C:/Users/User/Documents/GitHub/Automatizacion-Selenium/ScreenPlay/Projects/RepoSenaSoft/Bon-Bonnite/untitled/src/test/resources/features/purchase.feature:12)
-
-java.lang.NullPointerException
-	at java.base/java.util.regex.Matcher.appendExpandedReplacement(Matcher.java:1015)
-	at java.base/java.util.regex.Matcher.appendReplacement(Matcher.java:998)
-	at java.base/java.util.regex.Matcher.replaceAll(Matcher.java:1182)
-	at java.base/java.lang.String.replaceAll(String.java:2126)
-	at net.serenitybdd.screenplay.targets.TargetSelectorWithVariables.resolvedWith(TargetSelectorWithVariables.java:17)
-	at net.serenitybdd.screenplay.targets.XPathOrCssTarget.instantiated(XPathOrCssTarget.java:61)
-	at net.serenitybdd.screenplay.targets.XPathOrCssTarget.of(XPathOrCssTarget.java:42)
-	at tasks.PurchaseSuccessfulTask.performAs(PurchaseSuccessfulTask.java:24)
-	at tasks.PurchaseSuccessfulTask$ByteBuddy$Wn0BxBMT.performAs$accessor$A2sXYEsd(Unknown Source)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:492)
-	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:472)
-	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:445)
-	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:201)
-	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:188)
-	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:76)
-	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
-	at tasks.PurchaseSuccessfulTask$ByteBuddy$Wn0BxBMT.performAs(Unknown Source)
-	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:252)
-	at net.serenitybdd.screenplay.Actor.perform(Actor.java:233)
-	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:178)
-	at stepsdefinitions.PurchaseStepDefinition.theUserIsInTheMainPageAndClicksOnSomeCategorie(PurchaseStepDefinition.java:49)
-	at ?.the user is in the main page and clicks on some categorie(file:///C:/Users/User/Documents/GitHub/Automatizacion-Selenium/ScreenPlay/Projects/RepoSenaSoft/Bon-Bonnite/untitled/src/test/resources/features/purchase.feature:12)
-
-java.lang.NullPointerException
-	at java.base/java.util.regex.Matcher.appendExpandedReplacement(Matcher.java:1015)
-	at java.base/java.util.regex.Matcher.appendReplacement(Matcher.java:998)
-	at java.base/java.util.regex.Matcher.replaceAll(Matcher.java:1182)
-	at java.base/java.lang.String.replaceAll(String.java:2126)
-	at net.serenitybdd.screenplay.targets.TargetSelectorWithVariables.resolvedWith(TargetSelectorWithVariables.java:17)
-	at net.serenitybdd.screenplay.targets.XPathOrCssTarget.instantiated(XPathOrCssTarget.java:61)
-	at net.serenitybdd.screenplay.targets.XPathOrCssTarget.of(XPathOrCssTarget.java:42)
-	at tasks.PurchaseSuccessfulTask.performAs(PurchaseSuccessfulTask.java:24)
-	at tasks.PurchaseSuccessfulTask$ByteBuddy$Wn0BxBMT.performAs$accessor$A2sXYEsd(Unknown Source)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:492)
-	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:472)
-	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:445)
-	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:201)
-	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:188)
-	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:76)
-	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
-	at tasks.PurchaseSuccessfulTask$ByteBuddy$Wn0BxBMT.performAs(Unknown Source)
-	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:252)
-	at net.serenitybdd.screenplay.Actor.perform(Actor.java:233)
-	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:178)
-	at stepsdefinitions.PurchaseStepDefinition.theUserIsInTheMainPageAndClicksOnSomeCategorie(PurchaseStepDefinition.java:49)
-	at ?.the user is in the main page and clicks on some categorie(file:///C:/Users/User/Documents/GitHub/Automatizacion-Selenium/ScreenPlay/Projects/RepoSenaSoft/Bon-Bonnite/untitled/src/test/resources/features/purchase.feature:12)
-
-java.lang.NullPointerException
+2 Scenarios (?[32m2 passed?[0m)
+14 Steps (?[32m14 passed?[0m)
+1m51.368s
 
 
 </pre>
@@ -209,10 +116,10 @@ java.lang.NullPointerException
 -------------------------------------------------------------------------------------
 
 [Test worker] INFO  - Test Suite Started: purchase flow processes
-[pool-1-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@645c44fd: Generating report for test outcome: purchase flow processes:buy many products
-[pool-1-thread-2] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@645c44fd: Generating report for test outcome: purchase flow processes:buy shoes
-[pool-2-thread-2] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@49d7823f: Generating report for test outcome: purchase flow processes:buy shoes
-[pool-2-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@49d7823f: Generating report for test outcome: purchase flow processes:buy many products
+[pool-1-thread-2] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@728f1352: Generating report for test outcome: purchase flow processes:buy shoes
+[pool-1-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@728f1352: Generating report for test outcome: purchase flow processes:Add many products on the cart
+[pool-2-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@5475224e: Generating report for test outcome: purchase flow processes:Add many products on the cart
+[pool-2-thread-2] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@5475224e: Generating report for test outcome: purchase flow processes:buy shoes
 </pre>
 </span>
 </div>
@@ -224,7 +131,7 @@ java.lang.NullPointerException
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 6.8.3</a> at 20 sep 2023 18:34:05</p>
+<a href="http://www.gradle.org">Gradle 6.8.3</a> at 20 sep 2023 21:42:08</p>
 </div>
 </div>
 </body>

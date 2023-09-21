@@ -154,7 +154,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 20-09-2023 18:30</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 20-09-2023 20:59</span>
     <br style="clear:left"/>
 </div>
 
@@ -192,9 +192,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-times-circle failure-icon fa-2x' title='FAILURE'></i></a></span>
                             <span class="test-case-title">
-                                <span class="error-color">buy many products
+                                <span class="failing-color">buy many products
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -210,7 +210,7 @@
 
     <div class="story-title">
         <h3>Scenario:</h3>
-        <div class="scenario">Given the user is in the main page and clicks on some categorie<br><table class='embedded'><tbody><tr><td>categories</td></tr><tr><td>&lt;categories&gt;</td></tr></tbody></table><br>When the user add a product into the cart<br><table class='embedded'><thead><th>numProduct</th><th>size</th></thead><tbody><tr><td>&lt;numProduct&gt;</td><td>&lt;size&gt;</td></tr></tbody></table><br>And the user repeat this process again<br><table class='embedded'><thead><th>categories</th><th>numProduct</th><th>size</th></thead><tbody><tr><td>&lt;categories&gt;</td><td>&lt;numProduct&gt;</td><td>&lt;size&gt;</td></tr><tr><td>&lt;categories&gt;</td><td>&lt;numProduct&gt;</td><td>&lt;size&gt;</td></tr></tbody></table><br>And the user repeat this process again<br><table class='embedded'><thead><th>categories</th><th>numProduct</th><th>size</th></thead><tbody><tr><td>&lt;categories&gt;</td><td>&lt;numProduct&gt;</td><td>&lt;size&gt;</td></tr></tbody></table><br>And the user clicks on the cart and see cart<br>And the user clicks on finalize purchase and clicks on continue<br>And the user filled out the form with their data and clicks on buy<br>Then the user should see the payment gateway</div>
+        <div class="scenario">Given the user is in the main page and clicks on "shoes" categorie<br>When the user add a tree product into the cart<br><table class='embedded'><thead><th>categories</th><th>numProduct</th><th>size</th></thead><tbody><tr><td>&lt;categories&gt;</td><td>&lt;numProduct&gt;</td><td>&lt;size&gt;</td></tr></tbody></table><br>And the user clicks on the icon cart<br>Then the user should see the content of the cart</div>
     </div>
 
     <div id="beforetable"></div>
@@ -221,7 +221,7 @@
         <div class="table">
             <div class="row">
                 <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
-                    <span class="error-message error-message-title">Null pointer exception</span>
+                    <span class="error-message error-message-title">Element should be present exception: Expected condition failed: waiting for By.cssSelector: //*[@id='wrapper']/div[5]/ul/li1]/div/div[2]/div[2]/div[1] to be present (tried for 20 second(s) with 100 milliseconds interval)Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'System info: host: 'DESKTOP-0AB3449', ip: '192.168.1.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20.1'Driver info: driver.version: unknown</span>
                 </div>
                 <div class="col-sm-2">
                     <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
@@ -237,13 +237,20 @@
         <div class="collapse multi-collapse" id="stacktraceModal-overall">
             <div class="card">
                 <div class="card-header">
-                    <h4>java.lang.NullPointerException </h4>
+                    <h4>net.thucydides.core.webdriver.exceptions.ElementShouldBePresentException </h4>
                 </div>
                 <div class="card-body">
                     <div>
-                        <pre>tasks.PurchaseSuccessfulTask.performAs(PurchaseSuccessfulTask.java:24)<br />stepsdefinitions.PurchaseStepDefinition.theUserIsInTheMainPageAndClicksOnSomeCategorie(PurchaseStepDefinition.java:49)<br />✽.the user is in the main page and clicks on some categorie(file:///C:/Users/User/Documents/GitHub/Automatizacion-Selenium/ScreenPlay/Projects/RepoSenaSoft/Bon-Bonnite/untitled/src/test/resources/features/purchase.feature:12)<br /></pre>
+                        <pre>tasks.PurchaseSuccessfulTwoTask.performAs(PurchaseSuccessfulTwoTask.java:38)<br />stepsdefinitions.PurchaseStepDefinition.theUserAddATreeProductIntoTheCart(PurchaseStepDefinition.java:62)<br />io.cucumber.java.Invoker.doInvoke(Invoker.java:66)<br />io.cucumber.java.Invoker.invoke(Invoker.java:24)<br />io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)<br />io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)<br />io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)<br />io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)<br />io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)<br />io.cucumber.core.runner.TestStep.run(TestStep.java:64)<br />io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)<br />io.cucumber.core.runner.TestCase.run(TestCase.java:104)<br />io.cucumber.core.runner.Runner.runPickle(Runner.java:73)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:234)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:57)<br /></pre>
                     </div>
 
+                    <h4>
+                        Caused by: org.openqa.selenium.TimeoutException
+                    </h4>
+                    <div>
+                            <pre>Expected condition failed: waiting for By.cssSelector: //*[@id='wrapper']/div[5]/ul/li1]/div/div[2]/div[2]/div[1] to be present (tried for 20 second(s) with 100 milliseconds interval)<br>Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'<br>System info: host: 'DESKTOP-0AB3449', ip: '192.168.1.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20.1'<br>Driver info: driver.version: unknown</pre>
+                        <pre>tasks.PurchaseSuccessfulTwoTask.performAs(PurchaseSuccessfulTwoTask.java :38)<br />stepsdefinitions.PurchaseStepDefinition.theUserAddATreeProductIntoTheCart(PurchaseStepDefinition.java :62)<br />io.cucumber.java.Invoker.doInvoke(Invoker.java :66)<br />io.cucumber.java.Invoker.invoke(Invoker.java :24)<br />io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java :47)<br />io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java :29)<br />io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java :66)<br />io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java :63)<br />io.cucumber.core.runner.TestStep.executeStep(TestStep.java :92)<br />io.cucumber.core.runner.TestStep.run(TestStep.java :64)<br />io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java :51)<br />io.cucumber.core.runner.TestCase.run(TestCase.java :104)<br />io.cucumber.core.runner.Runner.runPickle(Runner.java :73)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java :135)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java :27)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java :234)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java :57)<br /></pre>
+                    </div>
                 </div>
             </div>
         </div>
@@ -251,135 +258,49 @@
 
 
                 <div class="panel-body">
-                    <a href="pagesource7171747274023986793.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                    <a href="pagesource9820631013973712892.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
                 </div>
             </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="276e55ad0a2a353c3d46c708e9c535e088c7d7e40ad96d8abc48ffba76561d38.png" title=" Example 1: {categories=10, numProduct=1, size=4}" width="1366"/>
-                <img src="276e55ad0a2a353c3d46c708e9c535e088c7d7e40ad96d8abc48ffba76561d38.png" title=" Given the user is in the login page" width="1366"/>
-                <img src="276e55ad0a2a353c3d46c708e9c535e088c7d7e40ad96d8abc48ffba76561d38.png" title=" When the user enter the following credentials
+                <img src="40fbf521bb4087c5a9ced616d236d72feb4d93983592a137cae2e0a280f101c1.png" title=" Example 1: {categories=10, numProduct=1, size=3}" width="1366"/>
+                <img src="40fbf521bb4087c5a9ced616d236d72feb4d93983592a137cae2e0a280f101c1.png" title=" Given the user is in the login page" width="1366"/>
+                <img src="b25eac8937508a6992cc0c9884f4680f7cbc1bd15f7d3139790bcd3d634f6a7a.png" title=" When the user enter the following credentials
 | document | password |
 | 1111111111 | contrase&ntilde;a1234 |" width="1366"/>
-                <img src="276e55ad0a2a353c3d46c708e9c535e088c7d7e40ad96d8abc48ffba76561d38.png" title=" User click on account icon task" width="1366"/>
-                <img src="276e55ad0a2a353c3d46c708e9c535e088c7d7e40ad96d8abc48ffba76561d38.png" title=" user clicks on icon to access to the login-register page or account page" width="1366"/>
-                <img src="5cc50e3a45a5c7295d37cbf310955cdf27ecf141221919c6d530405da8418345.png" title=" user clicks on icon to access to the login-register page or account page (completed)" width="1366"/>
-                <img src="5cc50e3a45a5c7295d37cbf310955cdf27ecf141221919c6d530405da8418345.png" title=" User click on account icon task (completed)" width="1366"/>
-                <img src="38fa592c3c7b85ce5067f3f1259163d0e9044a940e8eafd034828b19f5eb4fbd.png" title=" User login task" width="1366"/>
-                <img src="38fa592c3c7b85ce5067f3f1259163d0e9044a940e8eafd034828b19f5eb4fbd.png" title=" user enters '1111111111' into Field to enter the username login" width="1366"/>
-                <img src="6716a13bcdbe0dcae5e645902c844b14c8b5d4233a24a4ffcd64a2707c20ff52.png" title=" user enters '1111111111' into Field to enter the username login (completed)" width="1366"/>
-                <img src="6716a13bcdbe0dcae5e645902c844b14c8b5d4233a24a4ffcd64a2707c20ff52.png" title=" user enters 'contrase&ntilde;a1234' into Field to enter the password login" width="1366"/>
-                <img src="e7d46fca5db66f58c63920be7df65be2e1b7592f905e46762cdcf67e252924f5.png" title=" user enters 'contrase&ntilde;a1234' into Field to enter the password login (completed)" width="1366"/>
-                <img src="2a1c70ec5fbf7896f47a3ed1aea73f858a06707bc93474e1291386d5b9690948.png" title=" user clicks on Button to submit the login credentials" width="1366"/>
-                <img src="bfddc3c95ba42c6d6d011757b49164334aeb22c6eb0ac186534bed59b8b498c2.png" title=" user clicks on Button to submit the login credentials (completed)" width="1366"/>
-                <img src="bfddc3c95ba42c6d6d011757b49164334aeb22c6eb0ac186534bed59b8b498c2.png" title=" User login task (completed)" width="1366"/>
-                <img src="ea8039832ccccfb2d26f22d94255c04ff6d048845ab6f49aceda7c2d8a2df980.png" title=" When the user enter the following credentials
-| document | password |
-| 1111111111 | contrase&ntilde;a1234 | (completed)" width="1366"/>
-                <img src="ea8039832ccccfb2d26f22d94255c04ff6d048845ab6f49aceda7c2d8a2df980.png" title=" Then the user should see the main page" width="1366"/>
-                <img src="ea8039832ccccfb2d26f22d94255c04ff6d048845ab6f49aceda7c2d8a2df980.png" title=" Then The user should have been redirected to the homepage of the website should be 'LISTA DE DESEOS'" width="1366"/>
-                <img src="ea8039832ccccfb2d26f22d94255c04ff6d048845ab6f49aceda7c2d8a2df980.png" title=" Then The user should have been redirected to the homepage of the website should be 'LISTA DE DESEOS' (completed)" width="1366"/>
-                <img src="ea8039832ccccfb2d26f22d94255c04ff6d048845ab6f49aceda7c2d8a2df980.png" title=" Then the user should see the main page (completed)" width="1366"/>
-                <img src="ea8039832ccccfb2d26f22d94255c04ff6d048845ab6f49aceda7c2d8a2df980.png" title=" Given the user is in the main page and clicks on some categorie
-| categories |
-| 10 |" width="1366"/>
-                <img src="ea8039832ccccfb2d26f22d94255c04ff6d048845ab6f49aceda7c2d8a2df980.png" title=" User purchase successful task" width="1366"/>
-                <img src="ea8039832ccccfb2d26f22d94255c04ff6d048845ab6f49aceda7c2d8a2df980.png" title=" user clicks on " width="1366"/>
-                <img src="8a053fad93cc09f9b5eb0d4ea8e5f4d4660972996f9fd1113b599e607c47a571.png" title=" user clicks on  (completed)" width="1366"/>
-                <img src="8a053fad93cc09f9b5eb0d4ea8e5f4d4660972996f9fd1113b599e607c47a571.png" title=" User purchase successful task (completed)" width="1366"/>
-                <img src="fe4e8b16e30126b4aefa7f1c6d1fe4a686bfb9ed2d4bc14d52e26b795c1f8672.png" title=" Example 2: {categories=10, numProduct=1, size=6}" width="1366"/>
-                <img src="fe4e8b16e30126b4aefa7f1c6d1fe4a686bfb9ed2d4bc14d52e26b795c1f8672.png" title=" Given the user is in the login page" width="1366"/>
-                <img src="fe4e8b16e30126b4aefa7f1c6d1fe4a686bfb9ed2d4bc14d52e26b795c1f8672.png" title=" When the user enter the following credentials
-| document | password |
-| 1111111111 | contrase&ntilde;a1234 |" width="1366"/>
-                <img src="276e55ad0a2a353c3d46c708e9c535e088c7d7e40ad96d8abc48ffba76561d38.png" title=" User click on account icon task" width="1366"/>
-                <img src="276e55ad0a2a353c3d46c708e9c535e088c7d7e40ad96d8abc48ffba76561d38.png" title=" user clicks on icon to access to the login-register page or account page" width="1366"/>
-                <img src="cb8e423379788ecc3ab99177c2d4d4e83e05fac4090693716ced861d62b8e746.png" title=" user clicks on icon to access to the login-register page or account page (completed)" width="1366"/>
-                <img src="cb8e423379788ecc3ab99177c2d4d4e83e05fac4090693716ced861d62b8e746.png" title=" User click on account icon task (completed)" width="1366"/>
-                <img src="38fa592c3c7b85ce5067f3f1259163d0e9044a940e8eafd034828b19f5eb4fbd.png" title=" User login task" width="1366"/>
-                <img src="38fa592c3c7b85ce5067f3f1259163d0e9044a940e8eafd034828b19f5eb4fbd.png" title=" user enters '1111111111' into Field to enter the username login" width="1366"/>
-                <img src="6716a13bcdbe0dcae5e645902c844b14c8b5d4233a24a4ffcd64a2707c20ff52.png" title=" user enters '1111111111' into Field to enter the username login (completed)" width="1366"/>
-                <img src="6716a13bcdbe0dcae5e645902c844b14c8b5d4233a24a4ffcd64a2707c20ff52.png" title=" user enters 'contrase&ntilde;a1234' into Field to enter the password login" width="1366"/>
-                <img src="e7d46fca5db66f58c63920be7df65be2e1b7592f905e46762cdcf67e252924f5.png" title=" user enters 'contrase&ntilde;a1234' into Field to enter the password login (completed)" width="1366"/>
-                <img src="2a1c70ec5fbf7896f47a3ed1aea73f858a06707bc93474e1291386d5b9690948.png" title=" user clicks on Button to submit the login credentials" width="1366"/>
-                <img src="a95d4a73b5f2082d9f35f81a8919cec872def347f852db2c42bf58a1f5c4be4a.png" title=" user clicks on Button to submit the login credentials (completed)" width="1366"/>
-                <img src="ea8039832ccccfb2d26f22d94255c04ff6d048845ab6f49aceda7c2d8a2df980.png" title=" User login task (completed)" width="1366"/>
-                <img src="ea8039832ccccfb2d26f22d94255c04ff6d048845ab6f49aceda7c2d8a2df980.png" title=" When the user enter the following credentials
-| document | password |
-| 1111111111 | contrase&ntilde;a1234 | (completed)" width="1366"/>
-                <img src="ea8039832ccccfb2d26f22d94255c04ff6d048845ab6f49aceda7c2d8a2df980.png" title=" Then the user should see the main page" width="1366"/>
-                <img src="ea8039832ccccfb2d26f22d94255c04ff6d048845ab6f49aceda7c2d8a2df980.png" title=" Then The user should have been redirected to the homepage of the website should be 'LISTA DE DESEOS'" width="1366"/>
-                <img src="ea8039832ccccfb2d26f22d94255c04ff6d048845ab6f49aceda7c2d8a2df980.png" title=" Then The user should have been redirected to the homepage of the website should be 'LISTA DE DESEOS' (completed)" width="1366"/>
-                <img src="ea8039832ccccfb2d26f22d94255c04ff6d048845ab6f49aceda7c2d8a2df980.png" title=" Then the user should see the main page (completed)" width="1366"/>
-                <img src="ea8039832ccccfb2d26f22d94255c04ff6d048845ab6f49aceda7c2d8a2df980.png" title=" Given the user is in the main page and clicks on some categorie
-| categories |
-| 10 |" width="1366"/>
-                <img src="ea8039832ccccfb2d26f22d94255c04ff6d048845ab6f49aceda7c2d8a2df980.png" title=" User purchase successful task" width="1366"/>
-                <img src="ea8039832ccccfb2d26f22d94255c04ff6d048845ab6f49aceda7c2d8a2df980.png" title=" user clicks on " width="1366"/>
-                <img src="f8bd81fca90b37ffdc2cc0b677c1bc4dc19c0cd97a1a583bb880985e64bda572.png" title=" user clicks on  (completed)" width="1366"/>
-                <img src="5560d9cfdf0f897072278d29b3e09a2636af8a7b322feadd51dc33885774f75e.png" title=" User purchase successful task (completed)" width="1366"/>
-                <img src="0dd38fe767dd7a8de2240978c972cc2bd088b13fb3903d4677f86c2ea39be61b.png" title=" Example 3: {categories=10, numProduct=2, size=7}" width="1366"/>
-                <img src="0dd38fe767dd7a8de2240978c972cc2bd088b13fb3903d4677f86c2ea39be61b.png" title=" Given the user is in the login page" width="1366"/>
-                <img src="0dd38fe767dd7a8de2240978c972cc2bd088b13fb3903d4677f86c2ea39be61b.png" title=" When the user enter the following credentials
-| document | password |
-| 1111111111 | contrase&ntilde;a1234 |" width="1366"/>
-                <img src="276e55ad0a2a353c3d46c708e9c535e088c7d7e40ad96d8abc48ffba76561d38.png" title=" User click on account icon task" width="1366"/>
-                <img src="276e55ad0a2a353c3d46c708e9c535e088c7d7e40ad96d8abc48ffba76561d38.png" title=" user clicks on icon to access to the login-register page or account page" width="1366"/>
-                <img src="3a723545c194d633dd216bd92ad7551ee65472cf788da0ad5285a3aec5fd2faa.png" title=" user clicks on icon to access to the login-register page or account page (completed)" width="1366"/>
-                <img src="3a723545c194d633dd216bd92ad7551ee65472cf788da0ad5285a3aec5fd2faa.png" title=" User click on account icon task (completed)" width="1366"/>
-                <img src="38fa592c3c7b85ce5067f3f1259163d0e9044a940e8eafd034828b19f5eb4fbd.png" title=" User login task" width="1366"/>
-                <img src="38fa592c3c7b85ce5067f3f1259163d0e9044a940e8eafd034828b19f5eb4fbd.png" title=" user enters '1111111111' into Field to enter the username login" width="1366"/>
-                <img src="6716a13bcdbe0dcae5e645902c844b14c8b5d4233a24a4ffcd64a2707c20ff52.png" title=" user enters '1111111111' into Field to enter the username login (completed)" width="1366"/>
-                <img src="6716a13bcdbe0dcae5e645902c844b14c8b5d4233a24a4ffcd64a2707c20ff52.png" title=" user enters 'contrase&ntilde;a1234' into Field to enter the password login" width="1366"/>
-                <img src="e7d46fca5db66f58c63920be7df65be2e1b7592f905e46762cdcf67e252924f5.png" title=" user enters 'contrase&ntilde;a1234' into Field to enter the password login (completed)" width="1366"/>
-                <img src="2a1c70ec5fbf7896f47a3ed1aea73f858a06707bc93474e1291386d5b9690948.png" title=" user clicks on Button to submit the login credentials" width="1366"/>
-                <img src="885a33cc36cfc9eb72e776b3e25bb50fe7683ba434376bfc0bcdc99a91dfcf9f.png" title=" user clicks on Button to submit the login credentials (completed)" width="1366"/>
-                <img src="885a33cc36cfc9eb72e776b3e25bb50fe7683ba434376bfc0bcdc99a91dfcf9f.png" title=" User login task (completed)" width="1366"/>
-                <img src="ea8039832ccccfb2d26f22d94255c04ff6d048845ab6f49aceda7c2d8a2df980.png" title=" When the user enter the following credentials
-| document | password |
-| 1111111111 | contrase&ntilde;a1234 | (completed)" width="1366"/>
-                <img src="ea8039832ccccfb2d26f22d94255c04ff6d048845ab6f49aceda7c2d8a2df980.png" title=" Then the user should see the main page" width="1366"/>
-                <img src="ea8039832ccccfb2d26f22d94255c04ff6d048845ab6f49aceda7c2d8a2df980.png" title=" Then The user should have been redirected to the homepage of the website should be 'LISTA DE DESEOS'" width="1366"/>
-                <img src="ea8039832ccccfb2d26f22d94255c04ff6d048845ab6f49aceda7c2d8a2df980.png" title=" Then The user should have been redirected to the homepage of the website should be 'LISTA DE DESEOS' (completed)" width="1366"/>
-                <img src="ea8039832ccccfb2d26f22d94255c04ff6d048845ab6f49aceda7c2d8a2df980.png" title=" Then the user should see the main page (completed)" width="1366"/>
-                <img src="ea8039832ccccfb2d26f22d94255c04ff6d048845ab6f49aceda7c2d8a2df980.png" title=" Given the user is in the main page and clicks on some categorie
-| categories |
-| 10 |" width="1366"/>
-                <img src="ea8039832ccccfb2d26f22d94255c04ff6d048845ab6f49aceda7c2d8a2df980.png" title=" User purchase successful task" width="1366"/>
-                <img src="ea8039832ccccfb2d26f22d94255c04ff6d048845ab6f49aceda7c2d8a2df980.png" title=" user clicks on " width="1366"/>
-                <img src="8e11d44f2674236e41aa2faacca131b081a416dd8e38e911bfd355170c1c8f7c.png" title=" user clicks on  (completed)" width="1366"/>
-                <img src="8e11d44f2674236e41aa2faacca131b081a416dd8e38e911bfd355170c1c8f7c.png" title=" User purchase successful task (completed)" width="1366"/>
-                <img src="e26d54e29cc47272a6c2dfb432f33e9d702717d618c5d8619ca240c07a18c99f.png" title=" Example 4: {categories=10, numProduct=3, size=8}" width="1366"/>
-                <img src="e26d54e29cc47272a6c2dfb432f33e9d702717d618c5d8619ca240c07a18c99f.png" title=" Given the user is in the login page" width="1366"/>
-                <img src="e26d54e29cc47272a6c2dfb432f33e9d702717d618c5d8619ca240c07a18c99f.png" title=" When the user enter the following credentials
-| document | password |
-| 1111111111 | contrase&ntilde;a1234 |" width="1366"/>
-                <img src="40fbf521bb4087c5a9ced616d236d72feb4d93983592a137cae2e0a280f101c1.png" title=" User click on account icon task" width="1366"/>
-                <img src="40fbf521bb4087c5a9ced616d236d72feb4d93983592a137cae2e0a280f101c1.png" title=" user clicks on icon to access to the login-register page or account page" width="1366"/>
-                <img src="5d780e7fbd0cfc3937adf524262dc4ee92ed1d6fbc1cce62dd8c7986e683b4bd.png" title=" user clicks on icon to access to the login-register page or account page (completed)" width="1366"/>
-                <img src="5d780e7fbd0cfc3937adf524262dc4ee92ed1d6fbc1cce62dd8c7986e683b4bd.png" title=" User click on account icon task (completed)" width="1366"/>
+                <img src="b25eac8937508a6992cc0c9884f4680f7cbc1bd15f7d3139790bcd3d634f6a7a.png" title=" User click on account icon task" width="1366"/>
+                <img src="b25eac8937508a6992cc0c9884f4680f7cbc1bd15f7d3139790bcd3d634f6a7a.png" title=" user clicks on icon to access to the login-register page or account page" width="1366"/>
+                <img src="aa1370942aedb2129453648bdf01a50ab7f17968211d7f66a2d15bf421847cb7.png" title=" user clicks on icon to access to the login-register page or account page (completed)" width="1366"/>
+                <img src="aa1370942aedb2129453648bdf01a50ab7f17968211d7f66a2d15bf421847cb7.png" title=" User click on account icon task (completed)" width="1366"/>
                 <img src="aa1370942aedb2129453648bdf01a50ab7f17968211d7f66a2d15bf421847cb7.png" title=" User login task" width="1366"/>
                 <img src="aa1370942aedb2129453648bdf01a50ab7f17968211d7f66a2d15bf421847cb7.png" title=" user enters '1111111111' into Field to enter the username login" width="1366"/>
                 <img src="26696c7cde90c1eb5dfc85746fbd4791f4265af9e114a06f59516e796a30646d.png" title=" user enters '1111111111' into Field to enter the username login (completed)" width="1366"/>
                 <img src="26696c7cde90c1eb5dfc85746fbd4791f4265af9e114a06f59516e796a30646d.png" title=" user enters 'contrase&ntilde;a1234' into Field to enter the password login" width="1366"/>
                 <img src="2107b1b9b3f48589b665ad4d56ae5fee36711cc90e02fd9f280d1d776e6ad96e.png" title=" user enters 'contrase&ntilde;a1234' into Field to enter the password login (completed)" width="1366"/>
-                <img src="5adf5744ed48bc2b463a1bd00697a314f18c552a784163aa08f35510bae2cbc5.png" title=" user clicks on Button to submit the login credentials" width="1366"/>
-                <img src="a18377fa213e9b4619cd387976bfb788269c7b2e30a42ac6b9f97f109875f5da.png" title=" user clicks on Button to submit the login credentials (completed)" width="1366"/>
-                <img src="ea8039832ccccfb2d26f22d94255c04ff6d048845ab6f49aceda7c2d8a2df980.png" title=" User login task (completed)" width="1366"/>
-                <img src="ea8039832ccccfb2d26f22d94255c04ff6d048845ab6f49aceda7c2d8a2df980.png" title=" When the user enter the following credentials
+                <img src="d64560c235ceb4f9151e63cb311c27be1c897857725685258fced24040677905.png" title=" user clicks on Button to submit the login credentials" width="1366"/>
+                <img src="a9816a357fec705f6e4449c6f5a735b1049c162600abf31940615bf4cba408fd.png" title=" user clicks on Button to submit the login credentials (completed)" width="1366"/>
+                <img src="31e5df1c91ceed31a822e6ad10d377dfb7c6b397d9bc091659cee20a29067b97.png" title=" User login task (completed)" width="1366"/>
+                <img src="31e5df1c91ceed31a822e6ad10d377dfb7c6b397d9bc091659cee20a29067b97.png" title=" When the user enter the following credentials
 | document | password |
 | 1111111111 | contrase&ntilde;a1234 | (completed)" width="1366"/>
-                <img src="ea8039832ccccfb2d26f22d94255c04ff6d048845ab6f49aceda7c2d8a2df980.png" title=" Then the user should see the main page" width="1366"/>
-                <img src="ea8039832ccccfb2d26f22d94255c04ff6d048845ab6f49aceda7c2d8a2df980.png" title=" Then The user should have been redirected to the homepage of the website should be 'LISTA DE DESEOS'" width="1366"/>
-                <img src="ea8039832ccccfb2d26f22d94255c04ff6d048845ab6f49aceda7c2d8a2df980.png" title=" Then The user should have been redirected to the homepage of the website should be 'LISTA DE DESEOS' (completed)" width="1366"/>
-                <img src="ea8039832ccccfb2d26f22d94255c04ff6d048845ab6f49aceda7c2d8a2df980.png" title=" Then the user should see the main page (completed)" width="1366"/>
-                <img src="ea8039832ccccfb2d26f22d94255c04ff6d048845ab6f49aceda7c2d8a2df980.png" title=" Given the user is in the main page and clicks on some categorie
-| categories |
-| 10 |" width="1366"/>
-                <img src="ea8039832ccccfb2d26f22d94255c04ff6d048845ab6f49aceda7c2d8a2df980.png" title=" User purchase successful task" width="1366"/>
-                <img src="ea8039832ccccfb2d26f22d94255c04ff6d048845ab6f49aceda7c2d8a2df980.png" title=" user clicks on " width="1366"/>
-                <img src="157ee4ff28f9e9f46939789596f78967e27d73c38d68b09815bccc77ac0fe3c5.png" title=" user clicks on  (completed)" width="1366"/>
-                <img src="157ee4ff28f9e9f46939789596f78967e27d73c38d68b09815bccc77ac0fe3c5.png" title=" User purchase successful task (completed): <span class='error-color'>ERROR</span>" width="1366"/>
+                <img src="31e5df1c91ceed31a822e6ad10d377dfb7c6b397d9bc091659cee20a29067b97.png" title=" Then the user should see the main page" width="1366"/>
+                <img src="31e5df1c91ceed31a822e6ad10d377dfb7c6b397d9bc091659cee20a29067b97.png" title=" Then The user should have been redirected to the homepage of the website should be 'LISTA DE DESEOS'" width="1366"/>
+                <img src="31e5df1c91ceed31a822e6ad10d377dfb7c6b397d9bc091659cee20a29067b97.png" title=" Then The user should have been redirected to the homepage of the website should be 'LISTA DE DESEOS' (completed)" width="1366"/>
+                <img src="31e5df1c91ceed31a822e6ad10d377dfb7c6b397d9bc091659cee20a29067b97.png" title=" Then the user should see the main page (completed)" width="1366"/>
+                <img src="31e5df1c91ceed31a822e6ad10d377dfb7c6b397d9bc091659cee20a29067b97.png" title=" Given the user is in the main page and clicks on &quot;shoes&quot; categorie" width="1366"/>
+                <img src="31e5df1c91ceed31a822e6ad10d377dfb7c6b397d9bc091659cee20a29067b97.png" title=" User click on menu categories task" width="1366"/>
+                <img src="31e5df1c91ceed31a822e6ad10d377dfb7c6b397d9bc091659cee20a29067b97.png" title=" user clicks on product categories navigation bar" width="1366"/>
+                <img src="1b5ee95ee9e4b1321175b3dcc36ed66ea33ef4974e92f87362f3702232cd76e0.png" title=" user clicks on product categories navigation bar (completed)" width="1366"/>
+                <img src="1b5ee95ee9e4b1321175b3dcc36ed66ea33ef4974e92f87362f3702232cd76e0.png" title=" User click on menu categories task (completed)" width="1366"/>
+                <img src="8db680d23836d2dc9e71c06451c5e5a17f78dfa8e126a5f8921fc984e8579145.png" title=" Given the user is in the main page and clicks on &quot;shoes&quot; categorie (completed)" width="1366"/>
+                <img src="8db680d23836d2dc9e71c06451c5e5a17f78dfa8e126a5f8921fc984e8579145.png" title=" When the user add a tree product into the cart
+| categories | numProduct | size |
+| 10 | 1 | 3 |" width="1366"/>
+                <img src="8db680d23836d2dc9e71c06451c5e5a17f78dfa8e126a5f8921fc984e8579145.png" title=" User purchase successful two task" width="1366"/>
+                <img src="07a728a1fd1a115afbd6299d2836394e7439267d64ac89face609af4b22d91e3.png" title=" user clicks on " width="1366"/>
+                <img src="52b6c305208d128fe37ee0b8e62fb85fb5ad748b4ed22b319f4a9e5ff63dfdcd.png" title=" user clicks on  (completed)" width="1366"/>
+                <img src="52b6c305208d128fe37ee0b8e62fb85fb5ad748b4ed22b319f4a9e5ff63dfdcd.png" title=" user clicks on btn to add products into the cart" width="1366"/>
+                <img src="52b6c305208d128fe37ee0b8e62fb85fb5ad748b4ed22b319f4a9e5ff63dfdcd.png" title=" user clicks on btn to add products into the cart (completed): <span class='failing-color'>FAILURE</span>" width="1366"/>
             </div>
         </div>
 

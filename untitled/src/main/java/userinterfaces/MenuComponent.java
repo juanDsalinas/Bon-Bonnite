@@ -12,7 +12,7 @@ public class MenuComponent {
 
 
     //menu categories
-    public static final Target LBL_MENU_PRODUCT = Target.the("")
+    public static final Target LBL_MENU_PRODUCT = Target.the("product categories navigation bar")
             .locatedBy("//*[@id='menu-item-{0}']");
     public static final Target BTN_ADD_CAR = Target.the("")
             .locatedBy("//button[@type='submit']");

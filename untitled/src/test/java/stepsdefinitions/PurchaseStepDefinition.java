@@ -7,15 +7,13 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import models.PurchaseSuccessful;
+import models.PurchaseSuccessfulModel;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actors.Cast;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.WebDriver;
-import tasks.ClickOnMenuCategoriesTask;
-import tasks.PurchaseSuccessfulTask;
-import tasks.SelectAProductTask;
+import tasks.*;
 
 import java.util.List;
 import java.util.Map;
@@ -33,49 +31,42 @@ public class PurchaseStepDefinition {
     }
 
     @DataTableType
-    public PurchaseSuccessful userData(Map<String, String> value){
-        return new PurchaseSuccessful(
+    public PurchaseSuccessfulModel userData(Map<String, String> value){
+        return new PurchaseSuccessfulModel(
                 value.get("categories"),
                 value.get("numProduct"),
-                value.get("size")
+                value.get("size"),
+                value.get("color")
         );
     }
 
     // implementation the feature of me
-    @Given("the user is in the main page and clicks on some categorie")
-    public void theUserIsInTheMainPageAndClicksOnSomeCategorie(List<PurchaseSuccessful> credentialList) {
-        PurchaseSuccessful credentials;
+    /*@Given("the user is in the main page and clicks on some categorie")
+    public void theUserIsInTheMainPageAndClicksOnSomeCategorie(List<PurchaseSuccessfulModel> credentialList) {
+        PurchaseSuccessfulModel credentials;
         credentials = credentialList.get(0);
         OnStage.theActorInTheSpotlight().attemptsTo(PurchaseSuccessfulTask.select(credentials));
-    }
+    }*/
 
-    @When("the user add a product into the cart")
-    public void theUserAddAProductIntoTheCart(io.cucumber.datatable.DataTable dataTable) {
 
+    @Given("the user is in the main page and clicks on {string} categorie")
+    public void theUserIsInTheMainPageAndClicksOnCategorie(String menuOption) {
+        OnStage.theActorInTheSpotlight().wasAbleTo(ClickOnMenuCategoriesTask.selectMenuOption(menuOption));
     }
-    @When("the user repeat this process again")
-    public void theUserRepeatThisProcessAgain(io.cucumber.datatable.DataTable dataTable) {
-
+    @When("the user add a tree product into the cart")
+    public void theUserAddATreeProductIntoTheCart(List<PurchaseSuccessfulModel> credentialList) {
+        PurchaseSuccessfulModel credentials;
+        credentials = credentialList.get(0);
+        OnStage.theActorInTheSpotlight().attemptsTo(PurchaseSuccessfulTwoTask.selection(credentials));
     }
-    @When("the user clicks on the cart and see cart")
-    public void theUserClicksOnTheCartAndSeeCart() {
-
+    @And("the user clicks on the icon cart")
+    public void theUserClicksOnTheIconCart() {
+        OnStage.theActorInTheSpotlight().attemptsTo(ClickOnAccountIconTask.clickOnAccountIcon());
     }
-    @When("the user clicks on finalize purchase and clicks on continue")
-    public void theUserClicksOnFinalizePurchaseAndClicksOnContinue() {
-
-    }
-    @When("the user filled out the form with their data and clicks on buy")
-    public void theUserFilledOutTheFormWithTheirDataAndClicksOnBuy() {
-
-    }
-    @Then("the user should see the payment gateway")
-    public void theUserShouldSeeThePaymentGateway() {
+    @Then("the user should see the content of the cart")
+    public void theUserShouldSeeTheContentOfTheCart() {
 
     }
-
-
-
 
     // Scenario Bulla
     @Given("that the user is on the {string} section")
