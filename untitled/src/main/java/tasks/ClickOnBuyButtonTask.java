@@ -13,6 +13,7 @@ public class ClickOnBuyButtonTask implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
+                Scroll.to(ShoesPage.BTN_WISHLIST_HEART),
                 Click.on(MenuComponent.BTN_BUY_NOW));
     }
 

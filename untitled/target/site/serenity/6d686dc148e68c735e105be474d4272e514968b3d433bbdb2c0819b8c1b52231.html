@@ -305,7 +305,7 @@
                                                         <tr>
                                                             <td style="width:95%;" class="toc-title">
                                                                 <a href="#c21c9f744336a99f9064b05ac52caa039eb25dbc8094a2bc8578ee4d3c500083" title="View scenario details" >Buy shoes</a>
-
+                                                                     (1 example)
 
                                                             </td>
                                                             <td style="width:5%;">
@@ -402,23 +402,33 @@
                                                         </div>
                                                     </div>
                                                     <div class="scenario-docs card-body">
-                                                            <p>Given the user is in the login page</p>
-                                                            <p><p>When the user enter the following credentials</p>
+                                                            <p>Given that the user is on the &quot;shoes&quot; section</p>
+                                                            <p>When he select the product number &quot;6&quot; with the size &quot;35&quot;</p>
+                                                            <p>And user clicks on buy button</p>
+                                                            <p>And the user clicks on the confirmation buttons to access the billing form</p>
+                                                            <p><p>And the user enters the following data to the billing form</p>
 <table>
 <thead>
-<tr><th>document</th><th>password</th></tr>
+<tr><th>gender</th><th>documentype</th><th>country</th><th>department</th><th>city</th></tr>
 </thead>
 <tbody>
-<tr><td>1111111111</td><td>contraseña1234</td></tr>
+<tr><td>{gender}</td><td>{documentype}</td><td>{country}</td><td>{department}</td><td>{city}</td></tr>
 </tbody>
 </table>
 </p>
-                                                            <p>Then the user should see the main page</p>
-                                                            <p>Given that the user is on the &quot;shoes&quot; section</p>
-                                                            <p>When he select the product number &quot;1&quot; with the size &quot;37&quot;</p>
-                                                            <p>And user clicks on buy button</p>
-                                                            <p>Then the user should see the buy car</p>
+                                                            <p>And the user clicks on the payment button</p>
+                                                            <p>Then the user should see the payment gateway</p>
                                                         <div class="examples">
+                                                            <p><p>Examples:</p>
+<div class='example-table-in-scenario'><table>
+<thead>
+<tr><th>gender</th><th>documentype</th><th>country</th><th>department</th><th>city</th><th></th></tr>
+</thead>
+<tbody>
+<tr><td>Hombre</td><td>CC</td><td>Colombia</td><td>Antioquía</td><td>Medellín</td><td> </td></tr>
+</tbody>
+</table></div>
+</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -558,11 +568,11 @@
                                                     </thead>
                                                     <tbody>
                                                     <tr>
-                                                        <td> 1m 9s</td>
-                                                        <td> 2h  1m 5s</td>
+                                                        <td>49s</td>
+                                                        <td> 12h  32m 44s</td>
                                                         <td>13s</td>
-                                                        <td>56s</td>
-                                                        <td>34s</td>
+                                                        <td>35s</td>
+                                                        <td>24s</td>
                                                     </tr>
                                                     </tbody>
                                                 </table>
@@ -601,10 +611,11 @@
                                                 <tr class="scenario-result SUCCESS">
                                                     <td>
                                                             <a href="6da34d843a297fec0c544304ee364fbdd521a521703603f8e23e7a911d2c3c92.html">buy shoes</a>
+                                                               (1 example)
                                                     </td>
                                                     <td>7</td>
-                                                    <td>12:02:17</td>
-                                                    <td>56s 053ms</td>
+                                                    <td>22:33:56</td>
+                                                    <td>35s 636ms</td>
                                                     <td>
                                                             <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a> <span
                                                                 style="display:none">SUCCESS</span>

@@ -1,19 +1,21 @@
 package stepsdefinitions;
 
-import io.cucumber.java.After;
 import io.cucumber.java.Before;
+import io.cucumber.java.DataTableType;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import models.PaymentDataModel;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actors.Cast;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.WebDriver;
-import tasks.ClickOnBuyButtonTask;
-import tasks.ClickOnMenuCategoriesTask;
-import tasks.SelectAProductTask;
+import tasks.*;
+
+import java.util.List;
+import java.util.Map;
 
 public class PurchaseStepDefinition {
 
@@ -25,6 +27,17 @@ public class PurchaseStepDefinition {
         OnStage.setTheStage(Cast.ofStandardActors());
         OnStage.theActorCalled("user");
         OnStage.theActorInTheSpotlight().can(BrowseTheWeb.with(hisBrowser));
+    }
+
+    @DataTableType
+    public PaymentDataModel paymentData(Map<String,String> userData){
+        return new PaymentDataModel(
+                userData.get("gender"),
+                userData.get("documentype"),
+                userData.get("country"),
+                userData.get("department"),
+                userData.get("city")
+        );
     }
 
 
@@ -43,17 +56,32 @@ public class PurchaseStepDefinition {
         OnStage.theActorInTheSpotlight().attemptsTo(ClickOnBuyButtonTask.clickOnBuyButton());
     }
 
-    @Then("the user should see the buy car")
-    public void theUserShouldSeeTheBuyCar() {
+
+    @When("the user clicks on the confirmation buttons to access the billing form")
+    public void theUserClicksOnTheConfirmationButtonsToAccessTheBillingForm() {
+        OnStage.theActorInTheSpotlight().attemptsTo(ClsCarBuyButtonTask.confirmationCarButtons());
+        OnStage.theActorInTheSpotlight().attemptsTo(ClsFinishBuyNextBtnTask.confirmationButtons());
+    }
+
+
+    @When("the user enters the following data to the billing form")
+    public void theUserEntersTheFollowingDataToTheBillingForm(List<PaymentDataModel> paymentDataList) {
+//        PaymentDataModel userData;
+//        userData = paymentDataList.get(0);
+
+    }
+
+    @When("the user clicks on the payment button")
+    public void theUserClicksOnThePaymentButton() {
+        // Write code here that turns the phrase above into concrete actions
+
+    }
+    @Then("the user should see the payment gateway")
+    public void theUserShouldSeeThePaymentGateway() {
         // Write code here that turns the phrase above into concrete actions
 
     }
 
 
 
-
-    //    @After
-//    public void tearDown(){
-//        hisBrowser.quit();
-//    }
 }

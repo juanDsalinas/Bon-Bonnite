@@ -10,5 +10,8 @@ public class ShoesPage {
             .locatedBy("//*[@id='pa_talla']");
     public static final Target  LBL_RELATED_PRODUCTS = Target.the("")
             .locatedBy("//section[@class='related products']/h2");
+    public static final Target BTN_WISHLIST_HEART = Target.the("")
+            .locatedBy("//a[@name='aadir-a-la-lista-de-deseos']");
+
 
 }
