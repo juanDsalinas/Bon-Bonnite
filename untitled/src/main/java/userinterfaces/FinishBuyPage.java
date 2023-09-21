@@ -8,4 +8,6 @@ public class FinishBuyPage {
     public static final Target LBL_TOTAL = Target.the("")
             .locatedBy("//div[@id='step1']/div/div[3]/div/div[5]");
 
+    public static final Target TXT_GENDER = Target.the("")
+            .locatedBy("//*[@id='billing_gender']/option[{0}]");
 }

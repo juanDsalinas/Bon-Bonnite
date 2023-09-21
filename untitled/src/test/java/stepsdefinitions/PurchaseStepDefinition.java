@@ -66,8 +66,9 @@ public class PurchaseStepDefinition {
 
     @When("the user enters the following data to the billing form")
     public void theUserEntersTheFollowingDataToTheBillingForm(List<PaymentDataModel> paymentDataList) {
-//        PaymentDataModel userData;
-//        userData = paymentDataList.get(0);
+        PaymentDataModel userData;
+        userData = paymentDataList.get(0);
+        OnStage.theActorInTheSpotlight().attemptsTo(EnterPaymentUserDataTask.enterUserData(userData));
 
     }
 
