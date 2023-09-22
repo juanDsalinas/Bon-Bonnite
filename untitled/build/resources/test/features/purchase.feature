@@ -20,5 +20,5 @@ Feature: purchase flow processes
 
     Examples:
       | gender | documentype | country  | department | city     |
-      | Mujer  | CC          | Colombia | Antioquía  | Medellín |
+      | Mujer  | PP          | Colombia | Antioquía  | Medellín |
 

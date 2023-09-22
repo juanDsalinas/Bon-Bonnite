@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="purchase flow processes" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-09-21T03:58:20" hostname="LAPTOP-DASABUPE" time="42.581">
+<testsuite name="purchase flow processes" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-09-22T19:56:13" hostname="LAPTOP-DASABUPE" time="87.04">
   <properties/>
-  <testcase name="buy shoes" classname="purchase flow processes" time="42.581"/>
+  <testcase name="buy shoes" classname="purchase flow processes" time="87.04"/>
   <system-out><![CDATA[Step argument class io.cucumber.core.gherkin.messages.GherkinMessagesDataTableArgument
 Step argument class io.cucumber.core.gherkin.messages.GherkinMessagesDataTableArgument
 ]]></system-out>
@@ -21,11 +21,11 @@ buy shoes(purchase-flow-processes;buy-shoes)
 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\57305\.cache\selenium\chromedriver\win32\114.0.5735.90\chromedriver.exe
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: --start-maximized, goog:chromeOptions: {args: [--start-maximized], extensions: []}, loggingPrefs: org.openqa.selenium.logging...}
-Starting ChromeDriver 117.0.5938.88 (be6afae4721209be42944bbcd325665f9f44563b-refs/branch-heads/5938_62@{#9}) on port 9197
+Starting ChromeDriver 117.0.5938.88 (be6afae4721209be42944bbcd325665f9f44563b-refs/branch-heads/5938_62@{#9}) on port 9976
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-sept. 20, 2023 10:58:25 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+sept. 22, 2023 2:56:20 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMACIÓN: Detected dialect: W3C
 [Test worker] INFO  - 
   _____   ___   ___   _____     ___     _     ___   ___   ___   ___  

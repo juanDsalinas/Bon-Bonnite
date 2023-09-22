@@ -1,5 +1,5 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"purchase flow processes","buy shoes","SUCCESS","2023-09-20T22:58:20.4858294-05:00[America/Bogota]","0.0","42.19"
+"purchase flow processes","buy shoes","SUCCESS","2023-09-22T14:56:14.2572321-05:00[America/Bogota]","0.0","86.56"
 "Register","Register Successful","SUCCESS","2023-09-19T21:22:12.7113606-05:00[America/Bogota]","0.0","39.3"
 "Register","Register Failed","SUCCESS","2023-09-19T21:22:52.117574-05:00[America/Bogota]","0.0","26.31"
 "Register","Register with empty fields","SUCCESS","2023-09-19T21:23:18.4536726-05:00[America/Bogota]","0.0","22.52"

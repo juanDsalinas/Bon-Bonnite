@@ -7,11 +7,14 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import models.PaymentDataModel;
+import net.serenitybdd.screenplay.GivenWhenThen;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actors.Cast;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.thucydides.core.annotations.Managed;
+import org.hamcrest.Matchers;
 import org.openqa.selenium.WebDriver;
+import questions.FlowPurchaseQuestion;
 import tasks.*;
 
 import java.util.List;
@@ -23,21 +26,15 @@ public class PurchaseStepDefinition {
     WebDriver hisBrowser;
 
     @Before
-    public void setUp(){
+    public void setUp() {
         OnStage.setTheStage(Cast.ofStandardActors());
         OnStage.theActorCalled("user");
         OnStage.theActorInTheSpotlight().can(BrowseTheWeb.with(hisBrowser));
     }
 
     @DataTableType
-    public PaymentDataModel paymentData(Map<String,String> userData){
-        return new PaymentDataModel(
-                userData.get("gender"),
-                userData.get("documentype"),
-                userData.get("country"),
-                userData.get("department"),
-                userData.get("city")
-        );
+    public PaymentDataModel paymentData(Map<String, String> userData) {
+        return new PaymentDataModel(userData.get("gender"), userData.get("documentype"), userData.get("country"), userData.get("department"), userData.get("city"));
     }
 
 
@@ -48,7 +45,7 @@ public class PurchaseStepDefinition {
 
     @When("he select the product number {string} with the size {string}")
     public void heSelectTheProductNumberWithTheSize(String product, String size) {
-        OnStage.theActorInTheSpotlight().attemptsTo(SelectAProductTask.selectProduct(product,size));
+        OnStage.theActorInTheSpotlight().attemptsTo(SelectAProductTask.selectProduct(product, size));
     }
 
     @And("user clicks on buy button")
@@ -74,15 +71,19 @@ public class PurchaseStepDefinition {
 
     @When("the user clicks on the payment button")
     public void theUserClicksOnThePaymentButton() {
-        // Write code here that turns the phrase above into concrete actions
-
+        OnStage.theActorInTheSpotlight().attemptsTo(ClickFinishBuyTask.clickOnFinishBuyButton());
     }
+
     @Then("the user should see the payment gateway")
     public void theUserShouldSeeThePaymentGateway() {
-        // Write code here that turns the phrase above into concrete actions
-
+        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(FlowPurchaseQuestion.isPaymentGateway(),
+                Matchers.is(true)));
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
     }
-
 
 
 }

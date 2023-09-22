@@ -1,6 +1,6 @@
 package tasks;
 
-import interactions.SelectGenderInteraction;
+import interactions.*;
 import lombok.AllArgsConstructor;
 import models.PaymentDataModel;
 import net.serenitybdd.screenplay.Actor;
@@ -16,7 +16,13 @@ public class EnterPaymentUserDataTask implements Task {
 
     @Override
     public <T extends Actor> void performAs(T actor) {
-        actor.attemptsTo(SelectGenderInteraction.selectGender(paymentUserData.getGender()));
+        actor.attemptsTo(
+                SelectGenderInteraction.selectGender(paymentUserData.getGender()),
+                SelectDocumentTypeInteraction.selectDocumentType(paymentUserData.getDocumentype()),
+                SelectCountryInteraction.selectCountry(paymentUserData.getCountry()),
+                SelectDepartmentInteraction.selectDepartment(paymentUserData.getDepartment()),
+                SelectCityInteraction.selectCity(paymentUserData.getCity())
+                );
     }
     public static EnterPaymentUserDataTask enterUserData(PaymentDataModel paymentUserData){
         return instrumented(EnterPaymentUserDataTask.class,paymentUserData);
